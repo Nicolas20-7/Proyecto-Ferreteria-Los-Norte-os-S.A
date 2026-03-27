@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Ferreteria_Los_Norteños_S.A
 {
-    public partial class Usuarios : Form
+    public partial class nuevo_usuario : Form
     {
-        public Usuarios()
+        public nuevo_usuario()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
