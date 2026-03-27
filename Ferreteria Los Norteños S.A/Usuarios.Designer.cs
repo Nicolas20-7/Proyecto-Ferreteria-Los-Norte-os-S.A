@@ -1,6 +1,6 @@
 ﻿namespace Ferreteria_Los_Norteños_S.A
 {
-    partial class Clientes
+    partial class Usuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Usuarios
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Clientes";
+            this.Name = "Usuarios";
+            this.Text = "Usuarios";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
