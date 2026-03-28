@@ -16,7 +16,7 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Usuarios());
+            Application.Run(new nuevo_usuario());
         }
     }
 }
