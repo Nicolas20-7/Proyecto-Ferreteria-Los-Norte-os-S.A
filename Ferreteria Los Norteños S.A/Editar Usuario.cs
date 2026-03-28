@@ -16,5 +16,10 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             InitializeComponent();
         }
+
+        private void Editar_Proveedor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
