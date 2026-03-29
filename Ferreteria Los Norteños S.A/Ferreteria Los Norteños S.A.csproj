@@ -58,6 +58,7 @@
     <Compile Include="nuevo usuario.Designer.cs">
       <DependentUpon>nuevo usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
