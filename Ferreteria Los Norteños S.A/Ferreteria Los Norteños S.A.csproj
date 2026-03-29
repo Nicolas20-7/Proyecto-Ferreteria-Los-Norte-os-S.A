@@ -72,6 +72,8 @@
     <Compile Include="Proveedor Nuevo.Designer.cs">
       <DependentUpon>Proveedor Nuevo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proveedor.cs" />
+    <Compile Include="ProveedorDatos.cs" />
     <EmbeddedResource Include="Editar Proveedor.resx">
       <DependentUpon>Editar Proveedor.cs</DependentUpon>
     </EmbeddedResource>

@@ -12,7 +12,7 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     public partial class Editar_Proveedor : Form
     {
-        public Editar_Proveedor()
+        public Editar_Proveedor(int id)
         {
             InitializeComponent();
         }
