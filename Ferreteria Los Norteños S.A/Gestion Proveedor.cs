@@ -13,11 +13,7 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     public partial class Gestion_Proveedor : Form
     {
-        private static List<Proveedor> listaProveedores = new List<Proveedor>()
-        {
-            new Proveedor{ Id = 1 , Nombre = " ladriyeria la paz centro", Correo = "enmanuel@gmail.com" , Telefono = "5861-2360" , Cedula = "020205-012p" , Direccion = "carretera a managua"},
-            new Proveedor{ Id = 1 , Nombre = " ferromac", Correo = "bernaldo@gmail.com" , Telefono = "8888-5698" , Cedula = "0002-50k" , Direccion = "carretera a jinotega"}
-        };
+        
 
         public Gestion_Proveedor()
         {
@@ -32,25 +28,23 @@ namespace Ferreteria_Los_Norteños_S.A
             dgvProveedores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvProveedores.AllowUserToAddRows = false;
             dgvProveedores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            this.BackColor = Color.Gray; // Color de fondo como tu imagen
+            this.BackColor = Color.Gray; 
         }
 
         private void CargarDatos()
         {
-            // Forzamos la actualización de la tabla
+            
             dgvProveedores.DataSource = null;
             dgvProveedores.DataSource = listaProveedores;
         }
 
-        // --- EVENTOS DE LOS BOTONES ---
+
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            // Aquí llamarías a tu segundo formulario
+            
             MessageBox.Show("Abriendo formulario de Nuevo Proveedor...");
-            // Ejemplo:
-            // var frm = new Proveedor_Nuevo();
-            // if(frm.ShowDialog() == DialogResult.OK) CargarDatos();
+       
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -81,15 +75,6 @@ namespace Ferreteria_Los_Norteños_S.A
         }
     }
 
-    // --- CLASE MODELO ---
-    public class Proveedor
-    {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Correo { get; set; }
-        public string Telefono { get; set; }
-        public string Cedula { get; set; }
-        public string Direccion { get; set; }
-    }
+   
 }
 
