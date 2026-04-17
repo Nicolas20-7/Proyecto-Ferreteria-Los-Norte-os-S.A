@@ -157,6 +157,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Editar_Usuario";
             this.Text = "Editar_Usuario";
+            this.Load += new System.EventHandler(this.Editar_Usuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

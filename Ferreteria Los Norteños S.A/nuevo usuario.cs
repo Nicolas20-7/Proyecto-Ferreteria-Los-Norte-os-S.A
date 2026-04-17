@@ -18,7 +18,7 @@ namespace Ferreteria_Los_Norteños_S.A
         public nuevo_usuario()
         {
             InitializeComponent();
-            // Wire up cancel button (designer does not have handler)
+         
             button2.Click += (s, e) => { this.DialogResult = DialogResult.Cancel; this.Close(); };
         }
 
@@ -34,10 +34,10 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Guardar nuevo usuario
+           
             CreatedUsuario = new Usuario
             {
-                Id = 0, // será asignado por el formulario padre
+                Id = 0, 
                 Nombre = textBox1.Text?.Trim(),
                 Contrasena = textBox2.Text,
                 Correo = textBox3.Text?.Trim(),

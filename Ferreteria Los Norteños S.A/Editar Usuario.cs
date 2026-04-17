@@ -20,22 +20,21 @@ namespace Ferreteria_Los_Norteños_S.A
             InitializeComponent();
             this.usuario = usuario;
 
-            // Cargar datos
+         
             textBox1.Text = usuario?.Nombre;
             textBox2.Text = usuario?.Contrasena;
             textBox3.Text = usuario?.Correo;
             checkBox2.Checked = usuario?.Activo ?? false;
 
-            // Asignar eventos
-            button1.Click += Button1_Click; // Guardar
-            button2.Click += Button2_Click; // Cancelar
+            button1.Click += Button1_Click; 
+            button2.Click += Button2_Click; 
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             if (usuario != null)
             {
-                // Actualizar usuario existente
+               
                 usuario.Nombre = textBox1.Text?.Trim();
                 usuario.Contrasena = textBox2.Text;
                 usuario.Correo = textBox3.Text?.Trim();
@@ -50,6 +49,11 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void Editar_Usuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
