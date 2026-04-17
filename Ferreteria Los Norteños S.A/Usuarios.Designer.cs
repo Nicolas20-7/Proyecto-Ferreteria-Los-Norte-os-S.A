@@ -70,7 +70,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(145, 20);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = " buscar usuario ....";
             // 
             // dataGridView1
             // 
@@ -124,6 +123,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Nuevo Usuario";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 

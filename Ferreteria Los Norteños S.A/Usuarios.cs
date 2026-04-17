@@ -17,14 +17,14 @@ namespace Ferreteria_Los_Norteños_S.A
             InitializeComponent();
             ConfigurarGrid();
 
-            // Asignar eventos
-            button2.Click += Button2_Click; // Nuevo Usuario
-            button3.Click += Button3_Click; // Editar Usuario
-            button4.Click += Button4_Click; // Eliminar
-            button5.Click += Button5_Click; // Cerrar
-            button1.Click += Button1_Click; // Buscar
 
-            // Datos de ejemplo
+            button2.Click += Button2_Click;
+            button3.Click += Button3_Click; 
+            button4.Click += Button4_Click; 
+            button5.Click += Button5_Click;
+            button1.Click += Button1_Click; 
+
+ 
             if (listaUsuarios.Count == 0)
             {
                 listaUsuarios.Add(new Usuario { Id = nextUserId++, Nombre = "admin", Contrasena = "admin", Correo = "admin@empresa.com", Activo = true });
@@ -36,13 +36,13 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void ConfigurarGrid()
         {
-            dataGridView1.AutoGenerateColumns = false; // usar columnas del diseñador
+            dataGridView1.AutoGenerateColumns = false; 
             dataGridView1.ReadOnly = true;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Asegurar que las columnas del diseñador tienen DataPropertyName correctas
+          
             dataGridView1.Columns[0].DataPropertyName = "Id";
             dataGridView1.Columns[1].DataPropertyName = "Contrasena";
             dataGridView1.Columns[2].DataPropertyName = "Nombre";
@@ -133,10 +133,15 @@ namespace Ferreteria_Los_Norteños_S.A
             }).ToList();
         }
 
-        // Handler esperado por el diseñador
+       
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // método vacío para evitar error CS1061; implementar si necesitas respuestas a clicks
+           
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
