@@ -163,7 +163,7 @@
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Numero stul";
+            this.Column3.HeaderText = "Numero Ruc";
             this.Column3.Name = "Column3";
             // 
             // Column4
