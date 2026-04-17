@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5D7628C-AAE2-4811-8899-B040A02CC4BC}</ProjectGuid>
+    <ProjectGuid>{2D9C0390-3C4E-A983-1F2D-0A6F59618F5A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ferreteria_Los_Norteños_S.A</RootNamespace>
     <AssemblyName>Ferreteria Los Norteños S.A</AssemblyName>

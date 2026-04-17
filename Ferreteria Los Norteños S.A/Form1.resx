@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -174,7 +174,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnNuevaventa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -187,7 +187,7 @@
     <value>Constantia, 15.75pt</value>
   </data>
   <data name="btnNuevaventa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 187</value>
+    <value>177, 187</value>
   </data>
   <data name="btnNuevaventa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -211,7 +211,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNuevaventa.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnClientes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -223,7 +223,7 @@
     <value>Constantia, 15.75pt</value>
   </data>
   <data name="btnClientes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>437, 187</value>
+    <value>694, 187</value>
   </data>
   <data name="btnClientes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -247,7 +247,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnClientes.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnCaja.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -262,7 +262,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="btnCaja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>848, 187</value>
+    <value>349, 187</value>
   </data>
   <data name="btnCaja.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -286,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCaja.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnProductos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -298,7 +298,7 @@
     <value>Constantia, 15.75pt</value>
   </data>
   <data name="btnProductos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 187</value>
+    <value>523, 187</value>
   </data>
   <data name="btnProductos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -322,7 +322,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnProductos.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnNuevacompra.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -334,7 +334,7 @@
     <value>Constantia, 15.75pt</value>
   </data>
   <data name="btnNuevacompra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 187</value>
+    <value>9, 187</value>
   </data>
   <data name="btnNuevacompra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -358,11 +358,35 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNuevacompra.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="ts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="ts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1031, 25</value>
+  </data>
+  <data name="ts.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ts.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;ts.Name" xml:space="preserve">
+    <value>ts</value>
+  </data>
+  <data name="&gt;&gt;ts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tsbEntrada.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -459,28 +483,43 @@
   <data name="tsbSalir.Text" xml:space="preserve">
     <value>Salir</value>
   </data>
-  <data name="ts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="btnProveedores.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="ts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1031, 25</value>
+  <data name="btnProveedores.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="ts.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="btnProveedores.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 15.75pt</value>
   </data>
-  <data name="ts.Text" xml:space="preserve">
-    <value>toolStrip1</value>
+  <data name="btnProveedores.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;ts.Name" xml:space="preserve">
-    <value>ts</value>
+  <data name="btnProveedores.Location" type="System.Drawing.Point, System.Drawing">
+    <value>864, 187</value>
   </data>
-  <data name="&gt;&gt;ts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnProveedores.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;ts.Parent" xml:space="preserve">
+  <data name="btnProveedores.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 71</value>
+  </data>
+  <data name="btnProveedores.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnProveedores.Text" xml:space="preserve">
+    <value>Proveedores</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.Name" xml:space="preserve">
+    <value>btnProveedores</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ts.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnProveedores.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

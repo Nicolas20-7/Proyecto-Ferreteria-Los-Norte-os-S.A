@@ -41,6 +41,7 @@
             this.tsbProcesos = new System.Windows.Forms.ToolStripButton();
             this.tsbReportes = new System.Windows.Forms.ToolStripButton();
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
+            this.btnProveedores = new System.Windows.Forms.Button();
             this.ts.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,11 +153,21 @@
             resources.ApplyResources(this.tsbSalir, "tsbSalir");
             this.tsbSalir.Name = "tsbSalir";
             // 
+            // btnProveedores
+            // 
+            resources.ApplyResources(this.btnProveedores, "btnProveedores");
+            this.btnProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(132)))), ((int)(((byte)(164)))));
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedores.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(19)))), ((int)(((byte)(58)))));
+            this.Controls.Add(this.btnProveedores);
             this.Controls.Add(this.ts);
             this.Controls.Add(this.btnNuevacompra);
             this.Controls.Add(this.btnProductos);
@@ -188,6 +199,7 @@
         private System.Windows.Forms.ToolStripButton tsbProcesos;
         private System.Windows.Forms.ToolStripButton tsbReportes;
         private System.Windows.Forms.ToolStripButton tsbSalir;
+        private System.Windows.Forms.Button btnProveedores;
     }
 }
 
