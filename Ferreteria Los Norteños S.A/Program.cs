@@ -5,9 +5,6 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     internal static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {
