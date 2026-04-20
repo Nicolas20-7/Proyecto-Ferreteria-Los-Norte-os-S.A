@@ -37,18 +37,19 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnNuevacompra = new System.Windows.Forms.Button();
             this.ts = new System.Windows.Forms.ToolStrip();
-            this.tsbEntrada = new System.Windows.Forms.ToolStripButton();
-            this.tsbProcesos = new System.Windows.Forms.ToolStripButton();
-            this.tsbReportes = new System.Windows.Forms.ToolStripButton();
-            this.tsbSalir = new System.Windows.Forms.ToolStripButton();
             this.btnProveedores = new System.Windows.Forms.Button();
+            this.tbtnInicio = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tbtnHerramientas = new System.Windows.Forms.ToolStripDropDownButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.ts.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Name = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -110,48 +111,14 @@
             // ts
             // 
             this.ts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(164)))));
+            resources.ApplyResources(this.ts, "ts");
             this.ts.GripMargin = new System.Windows.Forms.Padding(3);
             this.ts.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.ts.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbEntrada,
-            this.tsbProcesos,
-            this.tsbReportes,
-            this.tsbSalir});
-            resources.ApplyResources(this.ts, "ts");
+            this.tbtnInicio,
+            this.tbtnHerramientas});
             this.ts.Name = "ts";
             this.ts.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            // 
-            // tsbEntrada
-            // 
-            this.tsbEntrada.BackColor = System.Drawing.Color.Transparent;
-            this.tsbEntrada.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbEntrada.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tsbEntrada, "tsbEntrada");
-            this.tsbEntrada.Name = "tsbEntrada";
-            // 
-            // tsbProcesos
-            // 
-            this.tsbProcesos.BackColor = System.Drawing.Color.Transparent;
-            this.tsbProcesos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbProcesos.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tsbProcesos, "tsbProcesos");
-            this.tsbProcesos.Name = "tsbProcesos";
-            // 
-            // tsbReportes
-            // 
-            this.tsbReportes.BackColor = System.Drawing.Color.Transparent;
-            this.tsbReportes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbReportes.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tsbReportes, "tsbReportes");
-            this.tsbReportes.Name = "tsbReportes";
-            // 
-            // tsbSalir
-            // 
-            this.tsbSalir.BackColor = System.Drawing.Color.Transparent;
-            this.tsbSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbSalir.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tsbSalir, "tsbSalir");
-            this.tsbSalir.Name = "tsbSalir";
             // 
             // btnProveedores
             // 
@@ -163,17 +130,35 @@
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click_1);
             // 
+            // tbtnInicio
+            // 
+            this.tbtnInicio.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            resources.ApplyResources(this.tbtnInicio, "tbtnInicio");
+            this.tbtnInicio.Name = "tbtnInicio";
+            // 
+            // tbtnHerramientas
+            // 
+            this.tbtnHerramientas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            resources.ApplyResources(this.tbtnHerramientas, "tbtnHerramientas");
+            this.tbtnHerramientas.Name = "tbtnHerramientas";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnClientes);
+            this.flowLayoutPanel1.Controls.Add(this.btnProductos);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(19)))), ((int)(((byte)(58)))));
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnProveedores);
             this.Controls.Add(this.ts);
             this.Controls.Add(this.btnNuevacompra);
-            this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnCaja);
-            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnNuevaventa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,6 +166,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ts.ResumeLayout(false);
             this.ts.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,11 +183,10 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnNuevacompra;
         private System.Windows.Forms.ToolStrip ts;
-        private System.Windows.Forms.ToolStripButton tsbEntrada;
-        private System.Windows.Forms.ToolStripButton tsbProcesos;
-        private System.Windows.Forms.ToolStripButton tsbReportes;
-        private System.Windows.Forms.ToolStripButton tsbSalir;
         private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.ToolStripDropDownButton tbtnInicio;
+        private System.Windows.Forms.ToolStripDropDownButton tbtnHerramientas;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
