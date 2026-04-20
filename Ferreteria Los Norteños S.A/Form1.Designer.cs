@@ -161,6 +161,7 @@
             this.btnProveedores.ForeColor = System.Drawing.Color.Transparent;
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click_1);
             // 
             // Form1
             // 

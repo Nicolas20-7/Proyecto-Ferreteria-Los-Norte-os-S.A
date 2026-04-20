@@ -61,5 +61,12 @@ namespace Ferreteria_Los_Norteños_S.A
         {
 
         }
+
+        private void btnProveedores_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            formulario1_proveedor formulario6 = new formulario1_proveedor();
+            formulario6.Show();
+        }
     }
 }
