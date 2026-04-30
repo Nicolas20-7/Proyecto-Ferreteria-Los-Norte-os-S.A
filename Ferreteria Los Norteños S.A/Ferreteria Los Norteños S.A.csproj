@@ -92,5 +92,50 @@
   <ItemGroup>
     <None Include="Resources\48405506_1633233836975886_4192543802143014912_n.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\447206488_972850908177925_6784054875537184452_n-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\447206488_972850908177925_6784054875537184452_n-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3144456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3144456 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3144456 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3144456 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3144456 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3144456 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket_tag_icon_142958 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cash-register-line-icon-png-image_9015781 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\335829 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2630085 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\456212 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6522581 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\664468 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

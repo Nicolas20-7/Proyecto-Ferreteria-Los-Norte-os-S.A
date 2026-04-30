@@ -17,6 +17,7 @@ namespace Ferreteria_Los_Norteños_S.A
             InitializeComponent();
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -64,9 +65,22 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void btnProveedores_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            formulario1_proveedor formulario6 = new formulario1_proveedor();
-            formulario6.Show();
+            
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

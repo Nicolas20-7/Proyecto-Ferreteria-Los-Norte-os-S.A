@@ -123,13 +123,17 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 26.25pt</value>
+    <value>Sans Serif Collection, 27.75pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 39</value>
+    <value>368, 11</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>428, 42</value>
+    <value>537, 126</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -147,13 +151,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Constantia, 12pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>472, 81</value>
@@ -174,190 +181,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btnNuevaventa.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnNuevaventa.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnNuevaventa.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 15.75pt</value>
-  </data>
-  <data name="btnNuevaventa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 273</value>
-  </data>
-  <data name="btnNuevaventa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnNuevaventa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 71</value>
-  </data>
-  <data name="btnNuevaventa.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnNuevaventa.Text" xml:space="preserve">
-    <value>Nueva venta</value>
-  </data>
-  <data name="&gt;&gt;btnNuevaventa.Name" xml:space="preserve">
-    <value>btnNuevaventa</value>
-  </data>
-  <data name="&gt;&gt;btnNuevaventa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnNuevaventa.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnNuevaventa.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnClientes.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnClientes.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnClientes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 15.75pt</value>
-  </data>
-  <data name="btnClientes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnClientes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnClientes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 71</value>
-  </data>
-  <data name="btnClientes.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnClientes.Text" xml:space="preserve">
-    <value>Clientes</value>
-  </data>
-  <data name="&gt;&gt;btnClientes.Name" xml:space="preserve">
-    <value>btnClientes</value>
-  </data>
-  <data name="&gt;&gt;btnClientes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnClientes.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnClientes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnCaja.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnCaja.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnCaja.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 15.75pt</value>
-  </data>
-  <data name="btnCaja.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnCaja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>843, 490</value>
-  </data>
-  <data name="btnCaja.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnCaja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 71</value>
-  </data>
-  <data name="btnCaja.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnCaja.Text" xml:space="preserve">
-    <value>Caja</value>
-  </data>
-  <data name="&gt;&gt;btnCaja.Name" xml:space="preserve">
-    <value>btnCaja</value>
-  </data>
-  <data name="&gt;&gt;btnCaja.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCaja.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnCaja.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnProductos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnProductos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 15.75pt</value>
-  </data>
-  <data name="btnProductos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 71</value>
-  </data>
-  <data name="btnProductos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnProductos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 71</value>
-  </data>
-  <data name="btnProductos.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnProductos.Text" xml:space="preserve">
-    <value>Productos</value>
-  </data>
-  <data name="&gt;&gt;btnProductos.Name" xml:space="preserve">
-    <value>btnProductos</value>
-  </data>
-  <data name="&gt;&gt;btnProductos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnProductos.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnProductos.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnNuevacompra.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnNuevacompra.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnNuevacompra.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 15.75pt</value>
-  </data>
-  <data name="btnNuevacompra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 389</value>
-  </data>
-  <data name="btnNuevacompra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnNuevacompra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 71</value>
-  </data>
-  <data name="btnNuevacompra.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btnNuevacompra.Text" xml:space="preserve">
-    <value>Nueva compra</value>
-  </data>
-  <data name="&gt;&gt;btnNuevacompra.Name" xml:space="preserve">
-    <value>btnNuevacompra</value>
-  </data>
-  <data name="&gt;&gt;btnNuevacompra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnNuevacompra.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnNuevacompra.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <metadata name="ts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -365,69 +188,6 @@
   </metadata>
   <data name="ts.Font" type="System.Drawing.Font, System.Drawing">
     <value>Constantia, 14.25pt</value>
-  </data>
-  <data name="ts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1031, 30</value>
-  </data>
-  <data name="ts.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="ts.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;ts.Name" xml:space="preserve">
-    <value>ts</value>
-  </data>
-  <data name="&gt;&gt;ts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ts.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ts.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnProveedores.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnProveedores.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnProveedores.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 15.75pt</value>
-  </data>
-  <data name="btnProveedores.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnProveedores.Location" type="System.Drawing.Point, System.Drawing">
-    <value>864, 187</value>
-  </data>
-  <data name="btnProveedores.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnProveedores.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 71</value>
-  </data>
-  <data name="btnProveedores.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnProveedores.Text" xml:space="preserve">
-    <value>Proveedores</value>
-  </data>
-  <data name="&gt;&gt;btnProveedores.Name" xml:space="preserve">
-    <value>btnProveedores</value>
-  </data>
-  <data name="&gt;&gt;btnProveedores.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnProveedores.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnProveedores.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tbtnInicio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -477,26 +237,365 @@
   <data name="tbtnHerramientas.Text" xml:space="preserve">
     <value>Herramientas</value>
   </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 33</value>
+  <data name="ts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 540</value>
+  <data name="ts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1031, 30</value>
   </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="ts.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="ts.Text" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ts.Name" xml:space="preserve">
+    <value>ts</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ts.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlContenedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 103</value>
+  </data>
+  <data name="pnlContenedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>736, 368</value>
+  </data>
+  <data name="pnlContenedor.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pnlContenedor.Name" xml:space="preserve">
+    <value>pnlContenedor</value>
+  </data>
+  <data name="&gt;&gt;pnlContenedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlContenedor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlContenedor.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="PnlBotones.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnProveedores.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnProveedores.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnProveedores.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sans Serif Collection, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnProveedores.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnProveedores.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProveedores.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 434</value>
+  </data>
+  <data name="btnProveedores.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnProveedores.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="btnProveedores.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnProveedores.Text" xml:space="preserve">
+    <value>Proveedores</value>
+  </data>
+  <data name="btnProveedores.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="btnProveedores.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.Name" xml:space="preserve">
+    <value>btnProveedores</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.Parent" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;btnProveedores.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnClientes.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnClientes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnClientes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sans Serif Collection, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnClientes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnClientes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnClientes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 349</value>
+  </data>
+  <data name="btnClientes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnClientes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="btnClientes.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnClientes.Text" xml:space="preserve">
+    <value>clientes</value>
+  </data>
+  <data name="btnClientes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="btnClientes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnClientes.Name" xml:space="preserve">
+    <value>btnClientes</value>
+  </data>
+  <data name="&gt;&gt;btnClientes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClientes.Parent" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;btnClientes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnProductos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnProductos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sans Serif Collection, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnProductos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnProductos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProductos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 259</value>
+  </data>
+  <data name="btnProductos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnProductos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="btnProductos.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnProductos.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="btnProductos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="btnProductos.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnProductos.Name" xml:space="preserve">
+    <value>btnProductos</value>
+  </data>
+  <data name="&gt;&gt;btnProductos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProductos.Parent" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;btnProductos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCaja.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnCaja.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCaja.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sans Serif Collection, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnCaja.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnCaja.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCaja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 173</value>
+  </data>
+  <data name="btnCaja.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnCaja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="btnCaja.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnCaja.Text" xml:space="preserve">
+    <value>Caja</value>
+  </data>
+  <data name="btnCaja.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="btnCaja.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnCaja.Name" xml:space="preserve">
+    <value>btnCaja</value>
+  </data>
+  <data name="&gt;&gt;btnCaja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCaja.Parent" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;btnCaja.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnNuevaventa.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnNuevaventa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnNuevaventa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sans Serif Collection, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnNuevaventa.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnNuevaventa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnNuevaventa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 90</value>
+  </data>
+  <data name="btnNuevaventa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnNuevaventa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="btnNuevaventa.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnNuevaventa.Text" xml:space="preserve">
+    <value>Nueva venta</value>
+  </data>
+  <data name="btnNuevaventa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="btnNuevaventa.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnNuevaventa.Name" xml:space="preserve">
+    <value>btnNuevaventa</value>
+  </data>
+  <data name="&gt;&gt;btnNuevaventa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNuevaventa.Parent" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;btnNuevaventa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnNuevacompra.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnNuevacompra.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnNuevacompra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sans Serif Collection, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnNuevacompra.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnNuevacompra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnNuevacompra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 10</value>
+  </data>
+  <data name="btnNuevacompra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnNuevacompra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="btnNuevacompra.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnNuevacompra.Text" xml:space="preserve">
+    <value>Nueva compra</value>
+  </data>
+  <data name="btnNuevacompra.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="btnNuevacompra.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnNuevacompra.Name" xml:space="preserve">
+    <value>btnNuevacompra</value>
+  </data>
+  <data name="&gt;&gt;btnNuevacompra.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNuevacompra.Parent" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;btnNuevacompra.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PnlBotones.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="PnlBotones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="PnlBotones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 453</value>
+  </data>
+  <data name="PnlBotones.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PnlBotones.Name" xml:space="preserve">
+    <value>PnlBotones</value>
+  </data>
+  <data name="&gt;&gt;PnlBotones.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBotones.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlBotones.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -508,7 +607,10 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1031, 599</value>
+    <value>1031, 483</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
