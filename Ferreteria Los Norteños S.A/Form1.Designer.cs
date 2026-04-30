@@ -61,7 +61,7 @@
             // 
             // ts
             // 
-            this.ts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(164)))));
+            this.ts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.ts, "ts");
             this.ts.GripMargin = new System.Windows.Forms.Padding(3);
             this.ts.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
