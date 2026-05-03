@@ -41,7 +41,7 @@ namespace Ferreteria_Los_Norteños_S.A
                 Nombre = textBox1.Text?.Trim(),
                 Contrasena = textBox2.Text,
                 Correo = textBox3.Text?.Trim(),
-                Activo = checkBox2.Checked
+                Activo = checkBox1.Checked
             };
 
             this.DialogResult = DialogResult.OK;
@@ -50,67 +50,6 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void nuevo_usuario_Load(object sender, EventArgs e)
         {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }

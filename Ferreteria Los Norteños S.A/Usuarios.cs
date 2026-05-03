@@ -143,5 +143,10 @@ namespace Ferreteria_Los_Norteños_S.A
         {
 
         }
+
+        private void Usuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
