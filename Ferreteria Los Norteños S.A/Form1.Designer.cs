@@ -153,6 +153,7 @@
             this.btnNuevaventa.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.ticket_tag_icon_142958__1_;
             this.btnNuevaventa.Name = "btnNuevaventa";
             this.btnNuevaventa.UseVisualStyleBackColor = false;
+            this.btnNuevaventa.Click += new System.EventHandler(this.btnNuevaventa_Click);
             // 
             // btnNuevacompra
             // 

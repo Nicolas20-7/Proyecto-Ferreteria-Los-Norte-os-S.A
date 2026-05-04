@@ -17,7 +17,25 @@ namespace Ferreteria_Los_Norteños_S.A
             InitializeComponent();
         }
 
-        
+        private void AbrirFormularioEnPanel(object Form2)
+        {
+
+            if (this.pnlContenedor.Controls.Count > 0)
+                this.pnlContenedor.Controls.RemoveAt(0);
+
+
+            Form fh = Form2 as Form;
+
+
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;
+
+            this.pnlContenedor.Controls.Add(fh);
+            this.pnlContenedor.Tag = fh;
+            fh.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -40,7 +58,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            AbrirFormularioEnPanel(new Form2());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -79,6 +97,11 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevaventa_Click(object sender, EventArgs e)
         {
 
         }

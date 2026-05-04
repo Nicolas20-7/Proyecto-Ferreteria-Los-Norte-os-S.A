@@ -63,6 +63,16 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _146 {
+            get {
+                object obj = ResourceManager.GetObject("146", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2630085__1_ {
             get {
                 object obj = ResourceManager.GetObject("2630085 (1)", resourceCulture);
