@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ts = new System.Windows.Forms.ToolStrip();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.PnlBotones = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
@@ -43,16 +46,11 @@
             this.tbtnInicio = new System.Windows.Forms.ToolStripDropDownButton();
             this.tbtnHerramientas = new System.Windows.Forms.ToolStripDropDownButton();
             this.ts.SuspendLayout();
+            this.pnlContenedor.SuspendLayout();
             this.PnlBotones.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -61,7 +59,7 @@
             // 
             // ts
             // 
-            this.ts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             resources.ApplyResources(this.ts, "ts");
             this.ts.GripMargin = new System.Windows.Forms.Padding(3);
             this.ts.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
@@ -69,17 +67,22 @@
             this.tbtnInicio,
             this.tbtnHerramientas});
             this.ts.Name = "ts";
-            this.ts.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.ts.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.ts.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ts_ItemClicked);
             // 
             // pnlContenedor
             // 
             resources.ApplyResources(this.pnlContenedor, "pnlContenedor");
+            this.pnlContenedor.BackColor = System.Drawing.Color.White;
+            this.pnlContenedor.Controls.Add(this.panel1);
+            this.pnlContenedor.Controls.Add(this.label1);
             this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
             // 
             // PnlBotones
             // 
             resources.ApplyResources(this.PnlBotones, "PnlBotones");
-            this.PnlBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.PnlBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
             this.PnlBotones.Controls.Add(this.btnProveedores);
             this.PnlBotones.Controls.Add(this.btnClientes);
             this.PnlBotones.Controls.Add(this.btnProductos);
@@ -89,13 +92,43 @@
             this.PnlBotones.Name = "PnlBotones";
             this.PnlBotones.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
+            this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
+            this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._8924931;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // btnProveedores
             // 
             this.btnProveedores.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.btnProveedores, "btnProveedores");
             this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProveedores.FlatAppearance.BorderSize = 0;
-            this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnProveedores.ForeColor = System.Drawing.Color.Black;
             this.btnProveedores.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._664468__1_;
@@ -108,7 +141,7 @@
             resources.ApplyResources(this.btnClientes, "btnClientes");
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnClientes.ForeColor = System.Drawing.Color.Black;
             this.btnClientes.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._6522581__1_;
@@ -121,7 +154,7 @@
             resources.ApplyResources(this.btnProductos, "btnProductos");
             this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnProductos.ForeColor = System.Drawing.Color.Black;
             this.btnProductos.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._2630085__1_;
@@ -134,7 +167,7 @@
             resources.ApplyResources(this.btnCaja, "btnCaja");
             this.btnCaja.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCaja.FlatAppearance.BorderSize = 0;
-            this.btnCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.btnCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnCaja.ForeColor = System.Drawing.Color.Black;
             this.btnCaja.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._335829__1_;
@@ -147,7 +180,7 @@
             resources.ApplyResources(this.btnNuevaventa, "btnNuevaventa");
             this.btnNuevaventa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevaventa.FlatAppearance.BorderSize = 0;
-            this.btnNuevaventa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.btnNuevaventa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnNuevaventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnNuevaventa.ForeColor = System.Drawing.Color.Black;
             this.btnNuevaventa.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.ticket_tag_icon_142958__1_;
@@ -161,7 +194,7 @@
             resources.ApplyResources(this.btnNuevacompra, "btnNuevacompra");
             this.btnNuevacompra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevacompra.FlatAppearance.BorderSize = 0;
-            this.btnNuevacompra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(215)))), ((int)(((byte)(222)))));
+            this.btnNuevacompra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnNuevacompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnNuevacompra.ForeColor = System.Drawing.Color.Black;
             this.btnNuevacompra.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._3144456__5_;
@@ -174,12 +207,14 @@
             this.tbtnInicio.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.tbtnInicio, "tbtnInicio");
             this.tbtnInicio.Name = "tbtnInicio";
+            this.tbtnInicio.Click += new System.EventHandler(this.tbtnInicio_Click);
             // 
             // tbtnHerramientas
             // 
             this.tbtnHerramientas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.tbtnHerramientas, "tbtnHerramientas");
             this.tbtnHerramientas.Name = "tbtnHerramientas";
+            this.tbtnHerramientas.Click += new System.EventHandler(this.tbtnHerramientas_Click);
             // 
             // Form1
             // 
@@ -190,25 +225,26 @@
             this.Controls.Add(this.PnlBotones);
             this.Controls.Add(this.ts);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ts.ResumeLayout(false);
             this.ts.PerformLayout();
+            this.pnlContenedor.ResumeLayout(false);
+            this.pnlContenedor.PerformLayout();
             this.PnlBotones.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnNuevacompra;
         private System.Windows.Forms.ToolStrip ts;
         private System.Windows.Forms.ToolStripDropDownButton tbtnInicio;
-        private System.Windows.Forms.ToolStripDropDownButton tbtnHerramientas;
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.Button btnNuevaventa;
         private System.Windows.Forms.Button btnProveedores;
@@ -216,6 +252,11 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnCaja;
         private System.Windows.Forms.Panel PnlBotones;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripDropDownButton tbtnHerramientas;
     }
 }
 

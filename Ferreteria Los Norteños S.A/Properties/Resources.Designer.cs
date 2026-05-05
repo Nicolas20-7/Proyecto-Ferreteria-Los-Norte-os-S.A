@@ -223,6 +223,26 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _892493 {
+            get {
+                object obj = ResourceManager.GetObject("892493", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8924931 {
+            get {
+                object obj = ResourceManager.GetObject("8924931", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _dreamcore__liminalspaces__surreal__weirdcore__backrooms__viral__fyp {
             get {
                 object obj = ResourceManager.GetObject("#dreamcore #liminalspaces #surreal #weirdcore #backrooms #viral #fyp", resourceCulture);
@@ -256,6 +276,26 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         internal static System.Drawing.Bitmap where_am_i__ {
             get {
                 object obj = ResourceManager.GetObject("where am i _", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_background_2_ {
+            get {
+                object obj = ResourceManager.GetObject("white-background(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_background_3_ {
+            get {
+                object obj = ResourceManager.GetObject("white-background(3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

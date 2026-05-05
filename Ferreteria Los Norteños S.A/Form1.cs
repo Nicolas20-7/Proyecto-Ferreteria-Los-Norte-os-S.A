@@ -103,6 +103,36 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void btnNuevaventa_Click(object sender, EventArgs e)
         {
+            AbrirFormularioEnPanel(new Form3());
+        }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbtnInicio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbtnHerramientas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ts_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
         }
     }
