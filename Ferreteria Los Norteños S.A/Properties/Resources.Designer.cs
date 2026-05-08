@@ -263,6 +263,26 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_05_07_092757 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-05-07 092757", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_05_07_092929 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-05-07 092929", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ticket_tag_icon_142958__1_ {
             get {
                 object obj = ResourceManager.GetObject("ticket_tag_icon_142958 (1)", resourceCulture);

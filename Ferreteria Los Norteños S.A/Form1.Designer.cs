@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label2 = new System.Windows.Forms.Label();
             this.ts = new System.Windows.Forms.ToolStrip();
-            this.tbtnInicio = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tbtnHerramientas = new System.Windows.Forms.ToolStripDropDownButton();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.PnlBotones = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnCaja = new System.Windows.Forms.Button();
             this.btnNuevaventa = new System.Windows.Forms.Button();
             this.btnNuevacompra = new System.Windows.Forms.Button();
+            this.tbtnInicio = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tbtnHerramientas = new System.Windows.Forms.ToolStripDropDownButton();
             this.ts.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.PnlBotones.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -68,20 +68,6 @@
             this.ts.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.ts.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ts_ItemClicked);
             // 
-            // tbtnInicio
-            // 
-            this.tbtnInicio.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            resources.ApplyResources(this.tbtnInicio, "tbtnInicio");
-            this.tbtnInicio.Name = "tbtnInicio";
-            this.tbtnInicio.Click += new System.EventHandler(this.tbtnInicio_Click);
-            // 
-            // tbtnHerramientas
-            // 
-            this.tbtnHerramientas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            resources.ApplyResources(this.tbtnHerramientas, "tbtnHerramientas");
-            this.tbtnHerramientas.Name = "tbtnHerramientas";
-            this.tbtnHerramientas.Click += new System.EventHandler(this.tbtnHerramientas_Click);
-            // 
             // pnlContenedor
             // 
             resources.ApplyResources(this.pnlContenedor, "pnlContenedor");
@@ -90,20 +76,6 @@
             this.pnlContenedor.Controls.Add(this.label1);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.label3);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
-            this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -125,6 +97,22 @@
             this.PnlBotones.Controls.Add(this.btnNuevacompra);
             this.PnlBotones.Name = "PnlBotones";
             this.PnlBotones.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.BackgroundImage = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.Screenshot_2026_05_07_092929;
+            this.panel1.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
+            this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnProveedores
             // 
@@ -206,6 +194,20 @@
             this.btnNuevacompra.UseVisualStyleBackColor = false;
             this.btnNuevacompra.Click += new System.EventHandler(this.button2_Click);
             // 
+            // tbtnInicio
+            // 
+            this.tbtnInicio.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            resources.ApplyResources(this.tbtnInicio, "tbtnInicio");
+            this.tbtnInicio.Name = "tbtnInicio";
+            this.tbtnInicio.Click += new System.EventHandler(this.tbtnInicio_Click);
+            // 
+            // tbtnHerramientas
+            // 
+            this.tbtnHerramientas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            resources.ApplyResources(this.tbtnHerramientas, "tbtnHerramientas");
+            this.tbtnHerramientas.Name = "tbtnHerramientas";
+            this.tbtnHerramientas.Click += new System.EventHandler(this.tbtnHerramientas_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -221,9 +223,9 @@
             this.ts.PerformLayout();
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
+            this.PnlBotones.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.PnlBotones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
