@@ -109,5 +109,8 @@
   <ItemGroup>
     <None Include="Resources\44 Christmas Drawing Ideas With Easy Doodles For 2026 - ArtsyCow.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton eliminar.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
