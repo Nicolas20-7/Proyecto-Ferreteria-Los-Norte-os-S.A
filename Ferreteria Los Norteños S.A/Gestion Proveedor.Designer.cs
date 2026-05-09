@@ -33,16 +33,14 @@
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
             this.btnEditar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.SuspendLayout();
@@ -63,10 +61,9 @@
             this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProveedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
+            this.Column5,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6,
             this.Column7});
             this.dgvProveedores.Location = new System.Drawing.Point(12, 71);
             this.dgvProveedores.Name = "dgvProveedores";
@@ -89,26 +86,15 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Cornsilk;
             this.button3.Location = new System.Drawing.Point(368, 415);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 34);
+            this.button3.Size = new System.Drawing.Size(132, 34);
             this.button3.TabIndex = 4;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.InfoText;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button4.Location = new System.Drawing.Point(500, 415);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 34);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -154,6 +140,11 @@
             this.Column2.HeaderText = "Nombre del proveedor";
             this.Column2.Name = "Column2";
             // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Número de Teléfono";
+            this.Column5.Name = "Column5";
+            // 
             // Column3
             // 
             this.Column3.HeaderText = "Numero Ruc";
@@ -163,16 +154,6 @@
             // 
             this.Column4.HeaderText = "Correo electrónico";
             this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Número de Teléfono";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Número de cédula";
-            this.Column6.Name = "Column6";
             // 
             // Column7
             // 
@@ -189,7 +170,6 @@
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.dgvProveedores);
@@ -209,7 +189,6 @@
         private System.Windows.Forms.DataGridView dgvProveedores;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
@@ -222,10 +201,9 @@
         }
 
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 
