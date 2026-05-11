@@ -23,6 +23,7 @@ namespace Ferreteria_Los_Norteños_S.A
             RedondearBoton(btnProductos, 13);
             RedondearBoton(btnProveedores, 13);
             RedondearBoton(btnClientes, 13);
+            RedondearBoton(btnInicio, 13);
         }
 
 
@@ -159,6 +160,46 @@ namespace Ferreteria_Los_Norteños_S.A
         private void ts_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Inicio());
+        }
+
+        private void btnCerrarsesion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCerrarSesion_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tsbCerrarsesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void historialDeCréditoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Credito());
+        }
+
+        private void btnCaja_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Form4());
+        }
+
+        private void btnProductos_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Form5());
         }
     }
 }

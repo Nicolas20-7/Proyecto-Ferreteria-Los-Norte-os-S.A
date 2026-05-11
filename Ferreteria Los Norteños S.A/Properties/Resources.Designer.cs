@@ -163,6 +163,26 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3574480_200__1_ {
+            get {
+                object obj = ResourceManager.GetObject("3574480-200 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3574480_200__2_ {
+            get {
+                object obj = ResourceManager.GetObject("3574480-200 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _447206488_972850908177925_6784054875537184452_n_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("447206488_972850908177925_6784054875537184452_n-removebg-preview", resourceCulture);
@@ -223,6 +243,36 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _74666 {
+            get {
+                object obj = ResourceManager.GetObject("74666", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _81501 {
+            get {
+                object obj = ResourceManager.GetObject("81501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _81501__1_ {
+            get {
+                object obj = ResourceManager.GetObject("81501 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _892493 {
             get {
                 object obj = ResourceManager.GetObject("892493", resourceCulture);
@@ -246,6 +296,46 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         internal static System.Drawing.Bitmap _dreamcore__liminalspaces__surreal__weirdcore__backrooms__viral__fyp {
             get {
                 object obj = ResourceManager.GetObject("#dreamcore #liminalspaces #surreal #weirdcore #backrooms #viral #fyp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Copia_de_varios_reportes_juntos_2 {
+            get {
+                object obj = ResourceManager.GetObject("Copia-de-varios-reportes-juntos-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga__5_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga__6_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_icon_home_house_icon_house_icon_free_115535088579crumwqczi__1_ {
+            get {
+                object obj = ResourceManager.GetObject("home-icon-home-house-icon-house-icon-free-115535088579crumwqczi (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
