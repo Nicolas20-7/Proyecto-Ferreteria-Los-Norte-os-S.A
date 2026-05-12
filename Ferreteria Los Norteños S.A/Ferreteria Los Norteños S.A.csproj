@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5D7628C-AAE2-4811-8899-B040A02CC4BC}</ProjectGuid>
+    <ProjectGuid>{2D9C0390-3C4E-A983-1F2D-0A6F59618F5A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ferreteria_Los_Norteños_S.A</RootNamespace>
     <AssemblyName>Ferreteria Los Norteños S.A</AssemblyName>
@@ -46,14 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="compra.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formulario compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulario compra.Designer.cs">
+      <DependentUpon>formulario compra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulario compra.resx">
+      <DependentUpon>formulario compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
