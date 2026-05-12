@@ -21,7 +21,6 @@ namespace Ferreteria_Los_Norteños_S.A
 
             // Asociar eventos de botones
             button1.Click += Button1_Click; // Guardar
-            button2.Click += Button2_Click; // Cancelar
 
             // Cargar datos si se encuentra (en este ejemplo buscamos en el propietario si es Gestion_Proveedor)
             LoadProveedorData();
@@ -35,7 +34,6 @@ namespace Ferreteria_Los_Norteños_S.A
                 if (proveedor != null)
                 {
                     textBox1.Text = proveedor.Nombre;
-                    textBox2.Text = ""; // contraseña no usada
                     textBox3.Text = proveedor.Correo;
                     textBox4.Text = proveedor.Telefono;
                     textBox5.Text = proveedor.Direccion;

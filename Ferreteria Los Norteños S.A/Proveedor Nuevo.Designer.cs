@@ -1,16 +1,9 @@
-﻿namespace Ferreteria_Los_Norteños_S.A
+namespace Ferreteria_Los_Norteños_S.A
 {
     partial class Proveedor_Nuevo
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedor_Nuevo));
@@ -45,7 +34,7 @@
             // 
             this.txtBox.AutoSize = true;
             this.txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox.Location = new System.Drawing.Point(33, 9);
+            this.txtBox.Location = new System.Drawing.Point(12, 9);
             this.txtBox.Name = "txtBox";
             this.txtBox.Size = new System.Drawing.Size(227, 20);
             this.txtBox.TabIndex = 0;
@@ -106,28 +95,28 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 225);
+            this.label6.Location = new System.Drawing.Point(12, 227);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Direccion ";
+            this.label6.Size = new System.Drawing.Size(84, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Direccion";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(16, 248);
+            this.txtDireccion.Location = new System.Drawing.Point(16, 250);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(207, 20);
-            this.txtDireccion.TabIndex = 11;
+            this.txtDireccion.TabIndex = 13;
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Aqua;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGuardar.Location = new System.Drawing.Point(85, 286);
+            this.btnGuardar.Location = new System.Drawing.Point(67, 291);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(85, 40);
-            this.btnGuardar.TabIndex = 12;
+            this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
@@ -136,7 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(285, 337);
+            this.ClientSize = new System.Drawing.Size(246, 341);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label6);

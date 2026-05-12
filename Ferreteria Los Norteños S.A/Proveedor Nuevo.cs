@@ -34,7 +34,7 @@ namespace Ferreteria_Los_Norteños_S.A
                 Telefono = txtNumero.Text,
                 Cedula = txtCedula.Text,
                 Direccion = txtDireccion.Text,
-                Codigo = "" // opcional
+                Codigo = "" // Se generará en Gestion_Proveedor
             };
 
             this.DialogResult = DialogResult.OK;

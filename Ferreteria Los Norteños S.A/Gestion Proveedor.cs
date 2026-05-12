@@ -26,7 +26,7 @@ namespace Ferreteria_Los_Norteños_S.A
             btnBuscar.Click += btnBuscar_Click;
             btnEditar.Click += btnEditar_Click;
             button3.Click += btnEliminar_Click; // button3 es Eliminar en el diseñador
-            button4.Click += btnCancelar_Click; // button4 es Cancelar en el diseñador
+           
             dgvProveedores.CellDoubleClick += dgvProveedores_CellDoubleClick;
 
             // Cargar datos de ejemplo
@@ -66,9 +66,22 @@ namespace Ferreteria_Los_Norteños_S.A
             form.Owner = this;
             if (form.ShowDialog() == DialogResult.OK && form.CreatedProveedor != null)
             {
+                // Generar RUC único
+                form.CreatedProveedor.Codigo = GenerarRUCUnico();
                 listaProveedores.Add(form.CreatedProveedor);
                 CargarDatos();
             }
+        }
+
+        private string GenerarRUCUnico()
+        {
+            Random rand = new Random();
+            string ruc;
+            do
+            {
+                ruc = rand.Next(100000000, 999999999).ToString();
+            } while (listaProveedores.Any(p => p.Codigo == ruc));
+            return ruc;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

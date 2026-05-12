@@ -58,12 +58,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="formulario compra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formulario compra.Designer.cs">
-      <DependentUpon>formulario compra.cs</DependentUpon>
-    </Compile>
     <Compile Include="Gestion Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
