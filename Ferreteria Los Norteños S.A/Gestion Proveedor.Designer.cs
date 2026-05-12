@@ -31,17 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_Proveedor));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEditar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,37 +68,13 @@
             this.Column5,
             this.Column3,
             this.Column4,
-            this.Column7});
+            this.Column7,
+            this.Column1});
             this.dgvProveedores.Location = new System.Drawing.Point(12, 71);
             this.dgvProveedores.Name = "dgvProveedores";
             this.dgvProveedores.Size = new System.Drawing.Size(743, 180);
             this.dgvProveedores.TabIndex = 1;
             this.dgvProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre del proveedor";
-            this.Column2.Name = "Column2";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Número de Teléfono";
-            this.Column5.Name = "Column5";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Numero Ruc";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Correo electrónico";
-            this.Column4.Name = "Column4";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Dirección";
-            this.Column7.Name = "Column7";
             // 
             // btnEditar
             // 
@@ -163,6 +140,36 @@
             this.btnNuevo.Text = "Nuevo proveedor";
             this.btnNuevo.UseVisualStyleBackColor = false;
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre del proveedor";
+            this.Column2.Name = "Column2";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Número de Teléfono";
+            this.Column5.Name = "Column5";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Numero Ruc";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Correo electrónico";
+            this.Column4.Name = "Column4";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Dirección";
+            this.Column7.Name = "Column7";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Estado";
+            this.Column1.Name = "Column1";
+            // 
             // Gestion_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,6 +215,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 
 }

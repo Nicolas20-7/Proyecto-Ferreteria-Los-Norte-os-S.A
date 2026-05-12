@@ -51,5 +51,10 @@ namespace Ferreteria_Los_Norteños_S.A
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

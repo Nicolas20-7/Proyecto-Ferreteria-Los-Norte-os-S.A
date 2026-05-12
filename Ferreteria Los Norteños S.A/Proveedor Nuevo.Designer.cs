@@ -39,9 +39,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBox
@@ -127,51 +124,19 @@
             this.btnGuardar.BackColor = System.Drawing.Color.Aqua;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGuardar.Location = new System.Drawing.Point(16, 439);
+            this.btnGuardar.Location = new System.Drawing.Point(70, 343);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(85, 40);
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 338);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(174, 20);
-            this.label7.TabIndex = 13;
-            this.label7.Text = " Cedula de identidad";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.Location = new System.Drawing.Point(16, 375);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(207, 20);
-            this.txtCedula.TabIndex = 14;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.DimGray;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancelar.Location = new System.Drawing.Point(132, 439);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(91, 40);
-            this.btnCancelar.TabIndex = 15;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
             // Proveedor_Nuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(285, 483);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txtCedula);
-            this.Controls.Add(this.label7);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(285, 395);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label6);
@@ -203,8 +168,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.Button btnCancelar;
     }
 }

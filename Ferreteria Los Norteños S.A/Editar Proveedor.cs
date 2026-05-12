@@ -69,5 +69,10 @@ namespace Ferreteria_Los_Norteños_S.A
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
