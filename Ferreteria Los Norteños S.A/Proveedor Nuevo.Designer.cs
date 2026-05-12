@@ -33,12 +33,13 @@ namespace Ferreteria_Los_Norteños_S.A
             // txtBox
             // 
             this.txtBox.AutoSize = true;
-            this.txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox.ForeColor = System.Drawing.Color.DarkBlue;
             this.txtBox.Location = new System.Drawing.Point(12, 9);
             this.txtBox.Name = "txtBox";
-            this.txtBox.Size = new System.Drawing.Size(227, 20);
+            this.txtBox.Size = new System.Drawing.Size(333, 32);
             this.txtBox.TabIndex = 0;
-            this.txtBox.Text = "Datos del Nuevo Proveedor";
+            this.txtBox.Text = "Datos Del Nuevo Proveedor";
             // 
             // label2
             // 
@@ -110,7 +111,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Aqua;
+            this.btnGuardar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnGuardar.Location = new System.Drawing.Point(67, 291);
@@ -124,8 +125,8 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(246, 341);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(351, 341);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label6);

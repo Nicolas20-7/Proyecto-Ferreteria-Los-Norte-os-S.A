@@ -48,10 +48,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 20);
+            this.label1.Size = new System.Drawing.Size(342, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Datos del proveedor a editar";
             // 
@@ -75,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(12, 65);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 20);
+            this.textBox1.Size = new System.Drawing.Size(260, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox6
@@ -85,7 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Location = new System.Drawing.Point(12, 306);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(207, 20);
+            this.textBox6.Size = new System.Drawing.Size(260, 20);
             this.textBox6.TabIndex = 27;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
@@ -112,7 +113,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(85, 401);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 40);
+            this.button1.Size = new System.Drawing.Size(138, 40);
             this.button1.TabIndex = 25;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
@@ -124,7 +125,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Location = new System.Drawing.Point(12, 242);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(207, 20);
+            this.textBox5.Size = new System.Drawing.Size(260, 20);
             this.textBox5.TabIndex = 24;
             // 
             // label6
@@ -147,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(12, 185);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(207, 20);
+            this.textBox4.Size = new System.Drawing.Size(260, 20);
             this.textBox4.TabIndex = 22;
             // 
             // label5
@@ -170,7 +171,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(12, 128);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 20);
+            this.textBox3.Size = new System.Drawing.Size(260, 20);
             this.textBox3.TabIndex = 20;
             // 
             // label4
@@ -215,7 +216,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(298, 441);
+            this.ClientSize = new System.Drawing.Size(351, 441);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox6);

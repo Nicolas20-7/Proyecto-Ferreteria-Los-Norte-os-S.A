@@ -31,18 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_Proveedor));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,11 +51,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(286, 9);
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(277, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 24);
+            this.label1.Size = new System.Drawing.Size(216, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Gestion de Proveedor";
+            this.label1.Text = "Gestion De Proveedor";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvProveedores
             // 
@@ -70,11 +73,41 @@
             this.Column4,
             this.Column7,
             this.Column1});
-            this.dgvProveedores.Location = new System.Drawing.Point(12, 71);
+            this.dgvProveedores.Location = new System.Drawing.Point(12, 185);
             this.dgvProveedores.Name = "dgvProveedores";
             this.dgvProveedores.Size = new System.Drawing.Size(743, 180);
             this.dgvProveedores.TabIndex = 1;
             this.dgvProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre del proveedor";
+            this.Column2.Name = "Column2";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Número de Teléfono";
+            this.Column5.Name = "Column5";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Numero Ruc";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Correo electrónico";
+            this.Column4.Name = "Column4";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Dirección";
+            this.Column7.Name = "Column7";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Estado";
+            this.Column1.Name = "Column1";
             // 
             // btnEditar
             // 
@@ -114,7 +147,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.Cyan;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBuscar.Location = new System.Drawing.Point(12, 35);
+            this.btnBuscar.Location = new System.Drawing.Point(12, 129);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(81, 30);
             this.btnBuscar.TabIndex = 7;
@@ -123,7 +156,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(111, 42);
+            this.txtBuscar.Location = new System.Drawing.Point(99, 139);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(124, 20);
             this.txtBuscar.TabIndex = 8;
@@ -140,42 +173,21 @@
             this.btnNuevo.Text = "Nuevo proveedor";
             this.btnNuevo.UseVisualStyleBackColor = false;
             // 
-            // Column2
+            // textBox1
             // 
-            this.Column2.HeaderText = "Nombre del proveedor";
-            this.Column2.Name = "Column2";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Número de Teléfono";
-            this.Column5.Name = "Column5";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Numero Ruc";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Correo electrónico";
-            this.Column4.Name = "Column4";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Dirección";
-            this.Column7.Name = "Column7";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Estado";
-            this.Column1.Name = "Column1";
+            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(0, -2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(755, 20);
+            this.textBox1.TabIndex = 10;
             // 
             // Gestion_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(755, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnBuscar);
@@ -216,6 +228,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 
 }

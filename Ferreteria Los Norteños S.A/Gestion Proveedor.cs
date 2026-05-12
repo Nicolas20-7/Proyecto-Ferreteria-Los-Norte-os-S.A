@@ -165,6 +165,11 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             return listaProveedores.FirstOrDefault(p => p.Id == id);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
