@@ -15,6 +15,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formulario_compra));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbInfoCompra = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -59,7 +60,8 @@ namespace Ferreteria_Los_Norteños_S.A
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(371, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(477, 10);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(219, 29);
             this.lblTitulo.TabIndex = 0;
@@ -72,9 +74,11 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoCompra.Controls.Add(this.lblTipoDocumento);
             this.gbInfoCompra.Controls.Add(this.lblFecha);
             this.gbInfoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbInfoCompra.Location = new System.Drawing.Point(25, 50);
+            this.gbInfoCompra.Location = new System.Drawing.Point(32, 54);
+            this.gbInfoCompra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbInfoCompra.Name = "gbInfoCompra";
-            this.gbInfoCompra.Size = new System.Drawing.Size(370, 100);
+            this.gbInfoCompra.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gbInfoCompra.Size = new System.Drawing.Size(517, 106);
             this.gbInfoCompra.TabIndex = 1;
             this.gbInfoCompra.TabStop = false;
             this.gbInfoCompra.Text = "Información Compra";
@@ -82,9 +86,10 @@ namespace Ferreteria_Los_Norteños_S.A
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(0, 51);
+            this.dateTimePicker1.Location = new System.Drawing.Point(0, 54);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(248, 22);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // cboTipoDocumento
@@ -94,28 +99,31 @@ namespace Ferreteria_Los_Norteños_S.A
             this.cboTipoDocumento.Items.AddRange(new object[] {
             "Boleta",
             "Factura"});
-            this.cboTipoDocumento.Location = new System.Drawing.Point(173, 51);
+            this.cboTipoDocumento.Location = new System.Drawing.Point(269, 52);
+            this.cboTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboTipoDocumento.Name = "cboTipoDocumento";
-            this.cboTipoDocumento.Size = new System.Drawing.Size(180, 24);
+            this.cboTipoDocumento.Size = new System.Drawing.Size(230, 24);
             this.cboTipoDocumento.TabIndex = 3;
             // 
             // lblTipoDocumento
             // 
             this.lblTipoDocumento.AutoSize = true;
-            this.lblTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblTipoDocumento.Location = new System.Drawing.Point(170, 30);
+            this.lblTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDocumento.Location = new System.Drawing.Point(266, 33);
+            this.lblTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoDocumento.Name = "lblTipoDocumento";
-            this.lblTipoDocumento.Size = new System.Drawing.Size(101, 15);
+            this.lblTipoDocumento.Size = new System.Drawing.Size(125, 16);
             this.lblTipoDocumento.TabIndex = 2;
             this.lblTipoDocumento.Text = "Tipo Documento:";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblFecha.Location = new System.Drawing.Point(15, 30);
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(19, 32);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(44, 15);
+            this.lblFecha.Size = new System.Drawing.Size(54, 16);
             this.lblFecha.TabIndex = 0;
             this.lblFecha.Text = "Fecha:";
             // 
@@ -125,36 +133,42 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoProveedor.Controls.Add(this.txtProveedor);
             this.gbInfoProveedor.Controls.Add(this.lblProveedor);
             this.gbInfoProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbInfoProveedor.Location = new System.Drawing.Point(410, 50);
+            this.gbInfoProveedor.Location = new System.Drawing.Point(643, 54);
+            this.gbInfoProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbInfoProveedor.Name = "gbInfoProveedor";
-            this.gbInfoProveedor.Size = new System.Drawing.Size(370, 100);
+            this.gbInfoProveedor.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gbInfoProveedor.Size = new System.Drawing.Size(476, 106);
             this.gbInfoProveedor.TabIndex = 2;
             this.gbInfoProveedor.TabStop = false;
             this.gbInfoProveedor.Text = "Información Proveedor";
+            this.gbInfoProveedor.Enter += new System.EventHandler(this.gbInfoProveedor_Enter);
             // 
             // btnBuscarProveedor
             // 
-            this.btnBuscarProveedor.Location = new System.Drawing.Point(285, 50);
+            this.btnBuscarProveedor.Location = new System.Drawing.Point(366, 54);
+            this.btnBuscarProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBuscarProveedor.Name = "btnBuscarProveedor";
-            this.btnBuscarProveedor.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarProveedor.Size = new System.Drawing.Size(96, 25);
             this.btnBuscarProveedor.TabIndex = 2;
             this.btnBuscarProveedor.Text = "Buscar";
             this.btnBuscarProveedor.UseVisualStyleBackColor = true;
             // 
             // txtProveedor
             // 
-            this.txtProveedor.Location = new System.Drawing.Point(15, 50);
+            this.txtProveedor.Location = new System.Drawing.Point(19, 54);
+            this.txtProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(260, 23);
+            this.txtProveedor.Size = new System.Drawing.Size(333, 23);
             this.txtProveedor.TabIndex = 1;
             // 
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
-            this.lblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblProveedor.Location = new System.Drawing.Point(15, 30);
+            this.lblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProveedor.Location = new System.Drawing.Point(19, 32);
+            this.lblProveedor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(66, 15);
+            this.lblProveedor.Size = new System.Drawing.Size(84, 16);
             this.lblProveedor.TabIndex = 0;
             this.lblProveedor.Text = "Proveedor:";
             // 
@@ -172,23 +186,26 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoProducto.Controls.Add(this.txtCodProducto);
             this.gbInfoProducto.Controls.Add(this.lblCodProducto);
             this.gbInfoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbInfoProducto.Location = new System.Drawing.Point(25, 165);
+            this.gbInfoProducto.Location = new System.Drawing.Point(32, 176);
+            this.gbInfoProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbInfoProducto.Name = "gbInfoProducto";
-            this.gbInfoProducto.Size = new System.Drawing.Size(755, 100);
+            this.gbInfoProducto.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gbInfoProducto.Size = new System.Drawing.Size(971, 106);
             this.gbInfoProducto.TabIndex = 3;
             this.gbInfoProducto.TabStop = false;
             this.gbInfoProducto.Text = "Información de Producto";
             // 
             // nudCantidad
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(600, 50);
+            this.nudCantidad.Location = new System.Drawing.Point(771, 54);
+            this.nudCantidad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nudCantidad.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(90, 23);
+            this.nudCantidad.Size = new System.Drawing.Size(116, 23);
             this.nudCantidad.TabIndex = 10;
             this.nudCantidad.Value = new decimal(new int[] {
             1,
@@ -199,87 +216,97 @@ namespace Ferreteria_Los_Norteños_S.A
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblCantidad.Location = new System.Drawing.Point(600, 30);
+            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(771, 32);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(59, 15);
+            this.lblCantidad.Size = new System.Drawing.Size(73, 16);
             this.lblCantidad.TabIndex = 9;
             this.lblCantidad.Text = "Cantidad:";
             // 
             // txtPrecioVenta
             // 
-            this.txtPrecioVenta.Location = new System.Drawing.Point(490, 50);
+            this.txtPrecioVenta.Location = new System.Drawing.Point(630, 54);
+            this.txtPrecioVenta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPrecioVenta.Name = "txtPrecioVenta";
-            this.txtPrecioVenta.Size = new System.Drawing.Size(90, 23);
+            this.txtPrecioVenta.Size = new System.Drawing.Size(115, 23);
             this.txtPrecioVenta.TabIndex = 8;
             // 
             // lblPrecioVenta
             // 
             this.lblPrecioVenta.AutoSize = true;
-            this.lblPrecioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblPrecioVenta.Location = new System.Drawing.Point(490, 30);
+            this.lblPrecioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioVenta.Location = new System.Drawing.Point(630, 32);
+            this.lblPrecioVenta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecioVenta.Name = "lblPrecioVenta";
-            this.lblPrecioVenta.Size = new System.Drawing.Size(79, 15);
+            this.lblPrecioVenta.Size = new System.Drawing.Size(100, 16);
             this.lblPrecioVenta.TabIndex = 7;
             this.lblPrecioVenta.Text = "Precio Venta:";
             // 
             // txtPrecioCompra
             // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(385, 50);
+            this.txtPrecioCompra.Location = new System.Drawing.Point(495, 54);
+            this.txtPrecioCompra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(90, 23);
+            this.txtPrecioCompra.Size = new System.Drawing.Size(115, 23);
             this.txtPrecioCompra.TabIndex = 6;
             // 
             // lblPrecioCompra
             // 
             this.lblPrecioCompra.AutoSize = true;
-            this.lblPrecioCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblPrecioCompra.Location = new System.Drawing.Point(385, 30);
+            this.lblPrecioCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioCompra.Location = new System.Drawing.Point(495, 32);
+            this.lblPrecioCompra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecioCompra.Name = "lblPrecioCompra";
-            this.lblPrecioCompra.Size = new System.Drawing.Size(92, 15);
+            this.lblPrecioCompra.Size = new System.Drawing.Size(114, 16);
             this.lblPrecioCompra.TabIndex = 5;
             this.lblPrecioCompra.Text = "Precio Compra:";
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(195, 50);
+            this.txtProducto.Location = new System.Drawing.Point(251, 54);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(170, 23);
+            this.txtProducto.Size = new System.Drawing.Size(217, 23);
             this.txtProducto.TabIndex = 4;
             // 
             // lblProducto
             // 
             this.lblProducto.AutoSize = true;
-            this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblProducto.Location = new System.Drawing.Point(195, 30);
+            this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProducto.Location = new System.Drawing.Point(251, 32);
+            this.lblProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(59, 15);
+            this.lblProducto.Size = new System.Drawing.Size(73, 16);
             this.lblProducto.TabIndex = 3;
             this.lblProducto.Text = "Producto:";
             // 
             // btnBuscarProducto
             // 
-            this.btnBuscarProducto.Location = new System.Drawing.Point(125, 50);
+            this.btnBuscarProducto.Location = new System.Drawing.Point(161, 54);
+            this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBuscarProducto.Name = "btnBuscarProducto";
-            this.btnBuscarProducto.Size = new System.Drawing.Size(60, 23);
+            this.btnBuscarProducto.Size = new System.Drawing.Size(77, 25);
             this.btnBuscarProducto.TabIndex = 2;
             this.btnBuscarProducto.Text = "Buscar";
             this.btnBuscarProducto.UseVisualStyleBackColor = true;
             // 
             // txtCodProducto
             // 
-            this.txtCodProducto.Location = new System.Drawing.Point(15, 50);
+            this.txtCodProducto.Location = new System.Drawing.Point(19, 54);
+            this.txtCodProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCodProducto.Name = "txtCodProducto";
-            this.txtCodProducto.Size = new System.Drawing.Size(100, 23);
+            this.txtCodProducto.Size = new System.Drawing.Size(127, 23);
             this.txtCodProducto.TabIndex = 1;
             // 
             // lblCodProducto
             // 
             this.lblCodProducto.AutoSize = true;
-            this.lblCodProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblCodProducto.Location = new System.Drawing.Point(15, 30);
+            this.lblCodProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodProducto.Location = new System.Drawing.Point(19, 32);
+            this.lblCodProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodProducto.Name = "lblCodProducto";
-            this.lblCodProducto.Size = new System.Drawing.Size(87, 15);
+            this.lblCodProducto.Size = new System.Drawing.Size(109, 16);
             this.lblCodProducto.TabIndex = 0;
             this.lblCodProducto.Text = "Cod. Producto:";
             // 
@@ -288,9 +315,10 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(795, 180);
+            this.btnAgregar.Location = new System.Drawing.Point(1022, 192);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(85, 70);
+            this.btnAgregar.Size = new System.Drawing.Size(109, 74);
             this.btnAgregar.TabIndex = 11;
             this.btnAgregar.Text = "➕\r\nAgregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -306,10 +334,11 @@ namespace Ferreteria_Los_Norteños_S.A
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dgvDetalle.Location = new System.Drawing.Point(25, 280);
+            this.dgvDetalle.Location = new System.Drawing.Point(32, 298);
+            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvDetalle.Name = "dgvDetalle";
             this.dgvDetalle.RowHeadersVisible = false;
-            this.dgvDetalle.Size = new System.Drawing.Size(755, 170);
+            this.dgvDetalle.Size = new System.Drawing.Size(971, 182);
             this.dgvDetalle.TabIndex = 12;
             // 
             // dataGridViewTextBoxColumn1
@@ -336,7 +365,8 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.lblTotalPagar.AutoSize = true;
             this.lblTotalPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.lblTotalPagar.Location = new System.Drawing.Point(795, 310);
+            this.lblTotalPagar.Location = new System.Drawing.Point(1022, 330);
+            this.lblTotalPagar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalPagar.Name = "lblTotalPagar";
             this.lblTotalPagar.Size = new System.Drawing.Size(112, 17);
             this.lblTotalPagar.TabIndex = 13;
@@ -344,10 +374,11 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // txtTotalPagar
             // 
-            this.txtTotalPagar.Location = new System.Drawing.Point(795, 335);
+            this.txtTotalPagar.Location = new System.Drawing.Point(1022, 358);
+            this.txtTotalPagar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTotalPagar.Name = "txtTotalPagar";
             this.txtTotalPagar.ReadOnly = true;
-            this.txtTotalPagar.Size = new System.Drawing.Size(85, 21);
+            this.txtTotalPagar.Size = new System.Drawing.Size(108, 22);
             this.txtTotalPagar.TabIndex = 14;
             this.txtTotalPagar.Text = "0.00";
             // 
@@ -356,9 +387,10 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnRegistrar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(786, 369);
+            this.btnRegistrar.Location = new System.Drawing.Point(1011, 394);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(112, 35);
+            this.btnRegistrar.Size = new System.Drawing.Size(144, 38);
             this.btnRegistrar.TabIndex = 15;
             this.btnRegistrar.Text = "✓ Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -368,19 +400,20 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnCancelar.BackColor = System.Drawing.Color.LightCoral;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(786, 410);
+            this.btnCancelar.Location = new System.Drawing.Point(1011, 438);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(144, 38);
             this.btnCancelar.TabIndex = 16;
             this.btnCancelar.Text = "✗ Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // formulario_compra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(947, 460);
+            this.ClientSize = new System.Drawing.Size(1218, 490);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtTotalPagar);
@@ -391,7 +424,10 @@ namespace Ferreteria_Los_Norteños_S.A
             this.Controls.Add(this.gbInfoProveedor);
             this.Controls.Add(this.gbInfoCompra);
             this.Controls.Add(this.lblTitulo);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "formulario_compra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Compra";

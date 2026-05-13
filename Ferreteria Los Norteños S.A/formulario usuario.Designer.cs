@@ -21,6 +21,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formulario_usuario));
             this.pnlIzquierdo = new System.Windows.Forms.Panel();
             this.lblTituloDetalle = new System.Windows.Forms.Label();
             this.lblDocumento = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // pnlIzquierdo
             // 
-            this.pnlIzquierdo.BackColor = System.Drawing.Color.White;
+            this.pnlIzquierdo.BackColor = System.Drawing.SystemColors.Window;
             this.pnlIzquierdo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlIzquierdo.Controls.Add(this.lblTituloDetalle);
             this.pnlIzquierdo.Controls.Add(this.lblDocumento);
@@ -85,19 +86,21 @@ namespace Ferreteria_Los_Norteños_S.A
             // lblTituloDetalle
             // 
             this.lblTituloDetalle.AutoSize = true;
-            this.lblTituloDetalle.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.lblTituloDetalle.Location = new System.Drawing.Point(15, 15);
+            this.lblTituloDetalle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloDetalle.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblTituloDetalle.Location = new System.Drawing.Point(41, 19);
             this.lblTituloDetalle.Name = "lblTituloDetalle";
-            this.lblTituloDetalle.Size = new System.Drawing.Size(145, 28);
+            this.lblTituloDetalle.Size = new System.Drawing.Size(150, 22);
             this.lblTituloDetalle.TabIndex = 0;
             this.lblTituloDetalle.Text = "Detalle Usuario";
             // 
             // lblDocumento
             // 
             this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDocumento.Location = new System.Drawing.Point(17, 114);
             this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Size = new System.Drawing.Size(85, 13);
+            this.lblDocumento.Size = new System.Drawing.Size(118, 16);
             this.lblDocumento.TabIndex = 1;
             this.lblDocumento.Text = "Nro Documento:";
             // 
@@ -105,15 +108,16 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.txtDocumento.Location = new System.Drawing.Point(15, 80);
             this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.Size = new System.Drawing.Size(220, 20);
+            this.txtDocumento.Size = new System.Drawing.Size(220, 24);
             this.txtDocumento.TabIndex = 2;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(17, 66);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(94, 13);
+            this.lblNombre.Size = new System.Drawing.Size(136, 16);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre Completo:";
             // 
@@ -121,15 +125,16 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.txtNombre.Location = new System.Drawing.Point(15, 130);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(220, 20);
+            this.txtNombre.Size = new System.Drawing.Size(220, 24);
             this.txtNombre.TabIndex = 4;
             // 
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(15, 160);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(41, 13);
+            this.lblCorreo.Size = new System.Drawing.Size(58, 16);
             this.lblCorreo.TabIndex = 5;
             this.lblCorreo.Text = "Correo:";
             // 
@@ -137,15 +142,16 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.txtCorreo.Location = new System.Drawing.Point(15, 180);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(220, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(220, 24);
             this.txtCorreo.TabIndex = 6;
             // 
             // lblClave
             // 
             this.lblClave.AutoSize = true;
+            this.lblClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClave.Location = new System.Drawing.Point(15, 210);
             this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(37, 13);
+            this.lblClave.Size = new System.Drawing.Size(51, 16);
             this.lblClave.TabIndex = 7;
             this.lblClave.Text = "Clave:";
             // 
@@ -153,16 +159,17 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.txtClave.Location = new System.Drawing.Point(15, 230);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(220, 20);
+            this.txtClave.Size = new System.Drawing.Size(220, 24);
             this.txtClave.TabIndex = 8;
             this.txtClave.UseSystemPasswordChar = true;
             // 
             // lblConfirmarClave
             // 
             this.lblConfirmarClave.AutoSize = true;
+            this.lblConfirmarClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirmarClave.Location = new System.Drawing.Point(15, 260);
             this.lblConfirmarClave.Name = "lblConfirmarClave";
-            this.lblConfirmarClave.Size = new System.Drawing.Size(84, 13);
+            this.lblConfirmarClave.Size = new System.Drawing.Size(121, 16);
             this.lblConfirmarClave.TabIndex = 9;
             this.lblConfirmarClave.Text = "Confirmar Clave:";
             // 
@@ -170,16 +177,17 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.txtConfirmarClave.Location = new System.Drawing.Point(15, 280);
             this.txtConfirmarClave.Name = "txtConfirmarClave";
-            this.txtConfirmarClave.Size = new System.Drawing.Size(220, 20);
+            this.txtConfirmarClave.Size = new System.Drawing.Size(220, 24);
             this.txtConfirmarClave.TabIndex = 10;
             this.txtConfirmarClave.UseSystemPasswordChar = true;
             // 
             // lblRol
             // 
             this.lblRol.AutoSize = true;
+            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRol.Location = new System.Drawing.Point(15, 310);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(26, 13);
+            this.lblRol.Size = new System.Drawing.Size(35, 16);
             this.lblRol.TabIndex = 11;
             this.lblRol.Text = "Rol:";
             // 
@@ -189,15 +197,16 @@ namespace Ferreteria_Los_Norteños_S.A
             this.cboRol.FormattingEnabled = true;
             this.cboRol.Location = new System.Drawing.Point(15, 330);
             this.cboRol.Name = "cboRol";
-            this.cboRol.Size = new System.Drawing.Size(220, 21);
+            this.cboRol.Size = new System.Drawing.Size(220, 26);
             this.cboRol.TabIndex = 12;
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.Location = new System.Drawing.Point(15, 360);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(43, 13);
+            this.lblEstado.Size = new System.Drawing.Size(60, 16);
             this.lblEstado.TabIndex = 13;
             this.lblEstado.Text = "Estado:";
             // 
@@ -207,13 +216,15 @@ namespace Ferreteria_Los_Norteños_S.A
             this.cboEstado.FormattingEnabled = true;
             this.cboEstado.Location = new System.Drawing.Point(15, 380);
             this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(220, 21);
+            this.cboEstado.Size = new System.Drawing.Size(220, 26);
             this.cboEstado.TabIndex = 14;
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(15, 420);
             this.btnGuardar.Name = "btnGuardar";
@@ -225,7 +236,9 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Location = new System.Drawing.Point(15, 455);
             this.btnEditar.Name = "btnEditar";
@@ -237,7 +250,9 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Help;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(15, 490);
             this.btnEliminar.Name = "btnEliminar";
@@ -258,25 +273,27 @@ namespace Ferreteria_Los_Norteños_S.A
             this.pnlFiltro.Controls.Add(this.btnLimpiar);
             this.pnlFiltro.Location = new System.Drawing.Point(280, 20);
             this.pnlFiltro.Name = "pnlFiltro";
-            this.pnlFiltro.Size = new System.Drawing.Size(780, 60);
+            this.pnlFiltro.Size = new System.Drawing.Size(808, 60);
             this.pnlFiltro.TabIndex = 1;
             // 
             // lblTituloLista
             // 
             this.lblTituloLista.AutoSize = true;
-            this.lblTituloLista.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.lblTituloLista.Location = new System.Drawing.Point(13, 12);
+            this.lblTituloLista.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloLista.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblTituloLista.Location = new System.Drawing.Point(3, 16);
             this.lblTituloLista.Name = "lblTituloLista";
-            this.lblTituloLista.Size = new System.Drawing.Size(179, 30);
+            this.lblTituloLista.Size = new System.Drawing.Size(192, 24);
             this.lblTituloLista.TabIndex = 0;
             this.lblTituloLista.Text = "Lista de Usuarios:";
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(210, 23);
+            this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.Location = new System.Drawing.Point(201, 20);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(61, 13);
+            this.lblBuscar.Size = new System.Drawing.Size(96, 18);
             this.lblBuscar.TabIndex = 1;
             this.lblBuscar.Text = "Buscar por:";
             // 
@@ -284,21 +301,22 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.cboBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBuscar.FormattingEnabled = true;
-            this.cboBuscar.Location = new System.Drawing.Point(280, 20);
+            this.cboBuscar.Location = new System.Drawing.Point(303, 18);
             this.cboBuscar.Name = "cboBuscar";
-            this.cboBuscar.Size = new System.Drawing.Size(120, 21);
+            this.cboBuscar.Size = new System.Drawing.Size(120, 26);
             this.cboBuscar.TabIndex = 2;
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(410, 20);
+            this.txtBuscar.Location = new System.Drawing.Point(432, 20);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(200, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(200, 24);
             this.txtBuscar.TabIndex = 3;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(620, 17);
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(638, 19);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 25);
             this.btnBuscar.TabIndex = 4;
@@ -307,7 +325,8 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(700, 17);
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(719, 18);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 25);
             this.btnLimpiar.TabIndex = 5;
@@ -330,6 +349,9 @@ namespace Ferreteria_Los_Norteños_S.A
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.pnlFiltro);
             this.Controls.Add(this.pnlIzquierdo);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formulario_usuario";
             this.Text = "Formulario usuario";
             this.pnlIzquierdo.ResumeLayout(false);

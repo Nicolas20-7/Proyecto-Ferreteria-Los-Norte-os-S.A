@@ -25,5 +25,10 @@ namespace Ferreteria_Los_Norteños_S.A
                 this.cboTipoDocumento.SelectedIndex = 0;
             }
         }
+
+        private void gbInfoProveedor_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
