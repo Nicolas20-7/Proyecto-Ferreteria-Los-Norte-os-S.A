@@ -1,4 +1,4 @@
-﻿using FerreteriaApp;
+﻿using Ferreteria_Los_Norteños_S;
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -368,35 +368,5 @@ namespace Ferreteria_Los_Norteños_S.A
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView dgvUsuarios;
-    }
-}
-
-namespace FerreteriaApp
-{
-    public partial class formulario_usuario : Form
-    {
-        public formulario_usuario()
-        {
-            InitializeComponent();
-
-            // Configurar columnas de la tabla al iniciar
-            dgvUsuarios.Columns.Add("Documento", "Nro Documento");
-            dgvUsuarios.Columns.Add("Nombre", "Nombre Completo");
-            dgvUsuarios.Columns.Add("Correo", "Correo");
-            dgvUsuarios.Columns.Add("Rol", "Rol");
-            dgvUsuarios.Columns.Add("Estado", "Estado");
-
-            // Cargar datos de prueba para los ComboBox
-            cboRol.Items.Add("Administrador");
-            cboRol.Items.Add("Empleado");
-            cboEstado.Items.Add("Activo");
-            cboEstado.Items.Add("No Activo");
-
-            // Opciones de búsqueda
-            cboBuscar.Items.Add("Documento");
-            cboBuscar.Items.Add("Nombre");
-            cboBuscar.Items.Add("Correo");
-            cboBuscar.SelectedIndex = 0;
-        }
     }
 }

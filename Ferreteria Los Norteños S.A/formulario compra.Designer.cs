@@ -407,7 +407,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         }
 
-        #endregion
+
 
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox gbInfoCompra;
