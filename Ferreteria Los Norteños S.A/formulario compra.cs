@@ -30,5 +30,10 @@ namespace Ferreteria_Los_Norteños_S.A
         {
 
         }
+
+        private void formulario_compra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

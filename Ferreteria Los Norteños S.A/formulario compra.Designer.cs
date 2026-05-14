@@ -397,7 +397,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCancelar.BackColor = System.Drawing.Color.DarkRed;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(1011, 438);
@@ -431,6 +431,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.Name = "formulario_compra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Compra";
+            this.Load += new System.EventHandler(this.formulario_compra_Load);
             this.gbInfoCompra.ResumeLayout(false);
             this.gbInfoCompra.PerformLayout();
             this.gbInfoProveedor.ResumeLayout(false);
