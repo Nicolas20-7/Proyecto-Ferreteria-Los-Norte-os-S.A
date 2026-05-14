@@ -315,12 +315,12 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(1022, 192);
+            this.btnAgregar.Location = new System.Drawing.Point(1022, 208);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(109, 74);
+            this.btnAgregar.Size = new System.Drawing.Size(108, 47);
             this.btnAgregar.TabIndex = 11;
-            this.btnAgregar.Text = "➕\r\nAgregar";
+            this.btnAgregar.Text = "\n +Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // dgvDetalle
@@ -392,7 +392,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(144, 38);
             this.btnRegistrar.TabIndex = 15;
-            this.btnRegistrar.Text = "✓ Registrar";
+            this.btnRegistrar.Text = "♠Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
@@ -405,7 +405,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(144, 38);
             this.btnCancelar.TabIndex = 16;
-            this.btnCancelar.Text = "✗ Cancelar";
+            this.btnCancelar.Text = "►Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // formulario_compra

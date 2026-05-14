@@ -230,7 +230,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(220, 30);
             this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.Text = "💾 Guardar";
+            this.btnGuardar.Text = " Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
             // btnEditar
@@ -244,7 +244,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(220, 30);
             this.btnEditar.TabIndex = 16;
-            this.btnEditar.Text = "✏️ Editar";
+            this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
@@ -258,7 +258,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(220, 30);
             this.btnEliminar.TabIndex = 17;
-            this.btnEliminar.Text = "🗑️ Eliminar";
+            this.btnEliminar.Text = " Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // pnlFiltro
