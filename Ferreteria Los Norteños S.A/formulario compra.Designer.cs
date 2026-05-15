@@ -58,16 +58,16 @@ namespace Ferreteria_Los_Norteños_S.A
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(477, 10);
+            this.lblTitulo.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(444, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Padding = new System.Windows.Forms.Padding(50, 0, 50, 0);
-            this.lblTitulo.Size = new System.Drawing.Size(319, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(355, 32);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Registrar Compra";
+            this.lblTitulo.Text = "Registrar Compra 💲";
             // 
             // gbInfoCompra
             // 
@@ -176,6 +176,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // gbInfoProducto
             // 
+            this.gbInfoProducto.BackColor = System.Drawing.Color.Gainsboro;
             this.gbInfoProducto.Controls.Add(this.nudCantidad);
             this.gbInfoProducto.Controls.Add(this.lblCantidad);
             this.gbInfoProducto.Controls.Add(this.txtPrecioVenta);
@@ -314,10 +315,10 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(1022, 201);
+            this.btnAgregar.Location = new System.Drawing.Point(964, 208);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(108, 54);
@@ -386,7 +387,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
             this.btnRegistrar.Location = new System.Drawing.Point(1011, 394);
@@ -414,7 +415,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1218, 490);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
