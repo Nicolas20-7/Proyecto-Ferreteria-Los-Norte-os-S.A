@@ -55,7 +55,7 @@ namespace Ferreteria_Los_Norteños_S.A
                 p.Codigo,
                 Correo = p.Correo,
                 Telefono = p.Telefono,
-                Cedula = p.Cedula,
+           
                 Direccion = p.Direccion
             }).ToList();
         }
@@ -96,7 +96,6 @@ namespace Ferreteria_Los_Norteños_S.A
                 p.Codigo,
                 Correo = p.Correo,
                 Telefono = p.Telefono,
-                Cedula = p.Cedula,
                 Direccion = p.Direccion
             }).ToList();
         }
@@ -167,6 +166,11 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gestion_Proveedor_Load(object sender, EventArgs e)
         {
 
         }

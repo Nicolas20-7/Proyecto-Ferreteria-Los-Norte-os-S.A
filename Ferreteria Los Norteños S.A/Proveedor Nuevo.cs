@@ -20,7 +20,7 @@ namespace Ferreteria_Los_Norteños_S.A
             InitializeComponent();
 
             btnGuardar.Click += BtnGuardar_Click;
-            btnCancelar.Click += BtnCancelar_Click;
+  
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace Ferreteria_Los_Norteños_S.A
                 Nombre = txtNombre.Text,
                 Correo = txtCorreo.Text,
                 Telefono = txtNumero.Text,
-                Cedula = txtCedula.Text,
+            
                 Direccion = txtDireccion.Text,
                 Codigo = "" // Se generará en Gestion_Proveedor
             };
