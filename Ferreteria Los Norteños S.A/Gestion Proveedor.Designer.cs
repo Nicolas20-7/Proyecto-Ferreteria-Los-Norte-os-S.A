@@ -127,14 +127,14 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.BackgroundImage = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.boton_eliminar;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button3.Location = new System.Drawing.Point(406, 304);
+            this.button3.Location = new System.Drawing.Point(385, 304);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 34);
+            this.button3.Size = new System.Drawing.Size(111, 34);
             this.button3.TabIndex = 4;
+            this.button3.Text = "🗑️ Eliminar ";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // label2
