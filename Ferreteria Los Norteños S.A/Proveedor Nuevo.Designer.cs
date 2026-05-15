@@ -35,8 +35,8 @@ namespace Ferreteria_Los_Norteños_S.A
             // txtBox
             // 
             resources.ApplyResources(this.txtBox, "txtBox");
-            this.txtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
-            this.txtBox.ForeColor = System.Drawing.Color.AliceBlue;
+            this.txtBox.BackColor = System.Drawing.Color.White;
+            this.txtBox.ForeColor = System.Drawing.Color.DarkBlue;
             this.txtBox.Name = "txtBox";
             // 
             // label2
@@ -118,7 +118,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuardar);
