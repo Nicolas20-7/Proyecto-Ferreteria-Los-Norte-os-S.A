@@ -5,15 +5,15 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     partial class formulario_proveedor : Form
     {
-   
+        // Paleta de colores de la imagen
         private Color colorFondo = Color.FromArgb(244, 245, 247);
-        private Color colorAzulPrincipal = Color.FromArgb(59, 91, 219); 
+        private Color colorAzulPrincipal = Color.FromArgb(59, 91, 219); // #3b5bdb
         private Color colorAzulOscuro = Color.FromArgb(43, 57, 144);
-        private Color colorVerde = Color.FromArgb(34, 197, 94);
-        private Color colorRojo = Color.FromArgb(239, 68, 68); 
+        private Color colorVerde = Color.FromArgb(34, 197, 94); // #22c55e
+        private Color colorRojo = Color.FromArgb(239, 68, 68); // #ef4444
         private Color colorTexto = Color.FromArgb(55, 65, 81);
 
-        // Constructor moved to formulario_proveedor.cs to avoid duplicate definition.
+     
 
         private void ConfigurarFormulario()
         {
@@ -26,7 +26,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void ConstruirInterfaz()
         {
-          
+            // 1. Barra de Título Personalizada
             Panel pnlTopBar = new Panel { Dock = DockStyle.Top, Height = 40, BackColor = Color.White };
             Label lblTituloApp = new Label { Text = "Gestión de Proveedores", ForeColor = colorAzulOscuro, Font = new Font("Segoe UI", 10F, FontStyle.Bold), Location = new Point(20, 10), AutoSize = true };
             Button btnCerrar = CrearBotonFlat("X", Color.White, Color.Gray, new Point(this.Width - 40, 0), 40, 40);
@@ -35,6 +35,7 @@ namespace Ferreteria_Los_Norteños_S.A
             pnlTopBar.Controls.Add(btnCerrar);
             this.Controls.Add(pnlTopBar);
 
+            // 2. Encabezado Central
             Label lblMainTitle = new Label { Text = "Gestión de Proveedores", Font = new Font("Segoe UI", 24F, FontStyle.Bold), ForeColor = colorAzulOscuro, AutoSize = true };
             lblMainTitle.Location = new Point((this.Width - lblMainTitle.Width) / 2 - 80, 70);
             this.Controls.Add(lblMainTitle);
@@ -43,14 +44,14 @@ namespace Ferreteria_Los_Norteños_S.A
             lblSubTitle.Location = new Point((this.Width - lblSubTitle.Width) / 2 - 80, 115);
             this.Controls.Add(lblSubTitle);
 
-          
+            // 3. Contenedor "Datos del Proveedor" (Tarjeta Blanca superior)
             Panel pnlDatos = new Panel { BackColor = Color.White, Location = new Point(40, 180), Size = new Size(1120, 250) };
-            pnlDatos.BorderStyle = BorderStyle.FixedSingle; 
+            pnlDatos.BorderStyle = BorderStyle.FixedSingle; // Simula el borde de la tarjeta
 
             Label lblDatosTitulo = new Label { Text = "Datos del Proveedor", Font = new Font("Segoe UI", 12F, FontStyle.Bold), ForeColor = colorAzulOscuro, Location = new Point(20, 15), AutoSize = true };
             pnlDatos.Controls.Add(lblDatosTitulo);
 
- 
+            // Campos de texto (Ejemplo: Nombre y Teléfono)
             pnlDatos.Controls.Add(CrearEtiquetaCampo("Nombre del proveedor *", new Point(20, 60)));
             pnlDatos.Controls.Add(CrearTextBox("Ingrese el nombre completo", new Point(20, 85), 300));
 
@@ -60,6 +61,7 @@ namespace Ferreteria_Los_Norteños_S.A
             pnlDatos.Controls.Add(CrearEtiquetaCampo("Correo electrónico", new Point(610, 60)));
             pnlDatos.Controls.Add(CrearTextBox("ejemplo@correo.com", new Point(610, 85), 250));
 
+            // Botones de Acción
             Button btnGuardar = CrearBotonFlat("Guardar", colorVerde, Color.White, new Point(20, 190), 100, 35);
             Button btnLimpiar = CrearBotonFlat("Limpiar", colorAzulPrincipal, Color.White, new Point(130, 190), 100, 35);
             Button btnCancelar = CrearBotonFlat("Cancelar", colorRojo, Color.White, new Point(240, 190), 100, 35);
@@ -70,12 +72,14 @@ namespace Ferreteria_Los_Norteños_S.A
 
             this.Controls.Add(pnlDatos);
 
+            // 4. Contenedor "Lista de Proveedores" (Tarjeta Blanca inferior)
             Panel pnlLista = new Panel { BackColor = Color.White, Location = new Point(40, 450), Size = new Size(1120, 280) };
             pnlLista.BorderStyle = BorderStyle.FixedSingle;
 
             Label lblListaTitulo = new Label { Text = "Lista de Proveedores", Font = new Font("Segoe UI", 12F, FontStyle.Bold), ForeColor = colorAzulOscuro, Location = new Point(20, 15), AutoSize = true };
             pnlLista.Controls.Add(lblListaTitulo);
 
+            // DataGridView para la tabla
             DataGridView dgvProveedores = new DataGridView();
             dgvProveedores.Location = new Point(20, 50);
             dgvProveedores.Size = new Size(1080, 200);
@@ -157,18 +161,10 @@ namespace Ferreteria_Los_Norteños_S.A
             if (disposing && (components != null)) { components.Dispose(); }
             base.Dispose(disposing);
         }
-        #region Windows Form Designer generated code
+        private void InitializeComponent() { this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font; }
+    
 
-        this method with the code editor.
         
-        private void InitializeComponent()
-        {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "formulario_proveedor";
-        }
 
-        #endregion
     }
 }

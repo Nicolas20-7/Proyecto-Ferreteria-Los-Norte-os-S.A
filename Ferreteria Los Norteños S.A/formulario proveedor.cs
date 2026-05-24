@@ -15,7 +15,7 @@ namespace Ferreteria_Los_Norteños_S.A
         public formulario_proveedor()
         {
             InitializeComponent();
-            // Inicializar apariencia y construir la interfaz dinámica definida en el diseñador parcial
+            
             ConfigurarFormulario();
             ConstruirInterfaz();
         }
