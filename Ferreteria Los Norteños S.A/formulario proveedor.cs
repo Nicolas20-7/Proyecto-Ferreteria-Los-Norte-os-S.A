@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Ferreteria_Los_Norteños_S.A
+{
+    public partial class formulario_proveedor : Form
+    {
+        public formulario_proveedor()
+        {
+            InitializeComponent();
+            // Inicializar apariencia y construir la interfaz dinámica definida en el diseñador parcial
+            ConfigurarFormulario();
+            ConstruirInterfaz();
+        }
+    }
+}
