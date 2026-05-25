@@ -18,100 +18,103 @@ namespace Ferreteria_Los_Norteños_S.A
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedor_Nuevo));
-            this.txtBox = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtBox
+            // textBox5
             // 
-            resources.ApplyResources(this.txtBox, "txtBox");
-            this.txtBox.BackColor = System.Drawing.Color.White;
-            this.txtBox.ForeColor = System.Drawing.Color.DarkBlue;
-            this.txtBox.Name = "txtBox";
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.BackColor = System.Drawing.Color.White;
+            this.textBox5.Name = "textBox5";
             // 
-            // label2
+            // textBox3
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.Name = "textBox3";
             // 
-            // txtNombre
+            // textBox7
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(164)))));
-            this.txtNombre.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.txtNombre, "txtNombre");
-            this.txtNombre.Name = "txtNombre";
+            this.textBox7.BackColor = System.Drawing.Color.DarkBlue;
+            resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.Name = "textBox7";
             // 
-            // label4
+            // textBox2
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label4.Name = "label4";
+            this.textBox2.BackColor = System.Drawing.Color.DarkBlue;
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
             // 
-            // txtCorreo
+            // label3
             // 
-            this.txtCorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(164)))));
-            this.txtCorreo.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.txtCorreo, "txtCorreo");
-            this.txtCorreo.Name = "txtCorreo";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
-            // label5
+            // button1
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label5.Name = "label5";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(164)))));
-            this.txtNumero.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.txtNumero, "txtNumero");
-            this.txtNumero.Name = "txtNumero";
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
-            this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label6.Name = "label6";
             // 
-            // txtDireccion
+            // label5
             // 
-            this.txtDireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(164)))));
-            this.txtDireccion.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.txtDireccion, "txtDireccion");
-            this.txtDireccion.Name = "txtDireccion";
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
-            // btnGuardar
+            // label4
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Help;
-            resources.ApplyResources(this.btnGuardar, "btnGuardar");
-            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(164)))));
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Name = "textBox1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
             this.label1.Name = "label1";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.BackColor = System.Drawing.Color.White;
+            this.textBox6.Name = "textBox6";
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.Name = "textBox4";
             // 
             // Proveedor_Nuevo
             // 
@@ -119,18 +122,20 @@ namespace Ferreteria_Los_Norteños_S.A
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtBox);
+            this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Proveedor_Nuevo";
             this.Load += new System.EventHandler(this.Proveedor_Nuevo_Load);
@@ -141,17 +146,19 @@ namespace Ferreteria_Los_Norteños_S.A
 
         #endregion
 
-        private System.Windows.Forms.Label txtBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
