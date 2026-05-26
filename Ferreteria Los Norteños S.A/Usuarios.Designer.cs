@@ -62,14 +62,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(19)))), ((int)(((byte)(66)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(12, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 27);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Buscar 🔎\r\n";
+            this.button1.Text = "Buscar :";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
@@ -126,12 +126,12 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(19)))), ((int)(((byte)(66)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(12, 405);
+            this.button2.Location = new System.Drawing.Point(12, 399);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 32);
+            this.button2.Size = new System.Drawing.Size(162, 38);
             this.button2.TabIndex = 4;
             this.button2.Text = "Nuevo Usuario ➕";
             this.button2.UseVisualStyleBackColor = false;
@@ -139,27 +139,30 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Navy;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(55)))), ((int)(((byte)(20)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(225, 405);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(196, 399);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 32);
+            this.button3.Size = new System.Drawing.Size(172, 38);
             this.button3.TabIndex = 5;
             this.button3.Text = "Editar Usuario 📝";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(421, 405);
+            this.button4.Location = new System.Drawing.Point(540, 399);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 32);
+            this.button4.Size = new System.Drawing.Size(115, 38);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Eliminar 🚫";
+            this.button4.Text = " X  Eliminar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // pictureBox1
             // 
@@ -176,7 +179,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkBlue;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
             this.textBox2.Location = new System.Drawing.Point(-3, 112);
             this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Multiline = true;
@@ -187,7 +190,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DarkBlue;
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
             this.textBox3.Location = new System.Drawing.Point(-15, 1);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -202,9 +205,9 @@
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
             this.label3.Location = new System.Drawing.Point(154, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(425, 20);
+            this.label3.Size = new System.Drawing.Size(445, 20);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Administra y mantén la información de tus Usuarios ";
+            this.label3.Text = " ¡ Administra y mantén la información de tus Usuarios !";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
