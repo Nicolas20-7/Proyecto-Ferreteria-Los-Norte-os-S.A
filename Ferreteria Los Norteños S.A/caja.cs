@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ferreteria_Los_Norteños_S.A
 {
-    public partial class Form5 : Form
+    public partial class caja : Form
     {
-        public Form5()
+        public caja()
         {
             InitializeComponent();
         }

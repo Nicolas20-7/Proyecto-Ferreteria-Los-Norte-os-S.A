@@ -17,13 +17,19 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             InitializeComponent();
             
-            RedondearBoton(btnNuevacompra, 13);
-            RedondearBoton(btnNuevaventa, 13);
-            RedondearBoton(btnCaja, 13);
-            RedondearBoton(btnProductos, 13);
-            RedondearBoton(btnProveedores, 13);
-            RedondearBoton(btnClientes, 13);
-            RedondearBoton(btnInicio, 13);
+            RedondearBoton(btnNuevacompra, 20);
+            RedondearBoton(btnNuevaventa, 20);
+            RedondearBoton(btnCaja, 20);
+            RedondearBoton(btnProductos, 20);
+            RedondearBoton(btnProveedores, 20);
+            RedondearBoton(btnClientes, 20);
+            RedondearBoton(btnInicio, 20);
+            RedondearBoton(btnCerrar, 20);
+            RedondearBoton(btnCredito, 20);
+            RedondearBoton(btnUsuarios, 20);
+            RedondearBoton(btnReportes, 20);
+            RedondearBoton(btnDevolucion, 20);
+
         }
 
 
@@ -62,6 +68,8 @@ namespace Ferreteria_Los_Norteños_S.A
             fh.Show();
         }
 
+        
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -74,7 +82,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            AbrirFormularioEnPanel(new Inicio());
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -84,7 +92,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new Form2());
+            AbrirFormularioEnPanel(new Nuevacompra());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -129,20 +137,10 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void btnNuevaventa_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new Form3());
+            AbrirFormularioEnPanel(new Nuevaventa());
         }
 
         private void pnlContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -194,12 +192,77 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void btnCaja_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new Form4());
+            AbrirFormularioEnPanel(new caja());
         }
 
         private void btnProductos_Click_1(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new Form5());
+            AbrirFormularioEnPanel(new Productos());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_4(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tssbHerramientas_ButtonClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Clientes());
+        }
+
+        private void btnProveedores_Click_2(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Proveedores());
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Usuarios());
+        }
+
+        private void btnProveedores_Click_3(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Proveedores());
+        }
+
+        private void btnCredito_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Credito());
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Usuarios());
+        }
+
+        private void btnDevolucion_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Devoluciones());
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Reportes());
         }
     }
 }

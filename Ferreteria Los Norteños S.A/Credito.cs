@@ -16,7 +16,10 @@ namespace Ferreteria_Los_Norteños_S.A
         public Credito()
         {
             InitializeComponent();
-            RedondearBoton(btnRecargar, 15);
+            RedondearBoton(btnAgregar, 20);
+            RedondearBoton(btnEditar, 20);
+            RedondearBoton(btnBuscar, 20);
+            
         }
 
         private void RedondearBoton(Button btn, int radio)
@@ -40,6 +43,26 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }

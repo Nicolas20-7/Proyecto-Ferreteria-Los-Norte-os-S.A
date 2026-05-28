@@ -124,8 +124,8 @@
   <data name="335829 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\335829 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="28475" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\28475.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2424527" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2424527.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3144456 (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3144456 (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +145,11 @@
   <data name="Copia-de-varios-reportes-juntos-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Copia-de-varios-reportes-juntos-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot 2026-05-07 092929" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2026-05-07 092929.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="descarga (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3144456 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3144456 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-cash-register-line-icon-png-image_9015781 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-cash-register-line-icon-png-image_9015781 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,14 +160,17 @@
   <data name="2630085 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2630085 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3144456 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3144456 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3840696" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3840696.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="664468 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\664468 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="#dreamcore #liminalspaces #surreal #weirdcore #backrooms #viral #fyp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\#dreamcore #liminalspaces #surreal #weirdcore #backrooms #viral #fyp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="447206488_972850908177925_6784054875537184452_n-removebg-preview (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\447206488_972850908177925_6784054875537184452_n-removebg-preview (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="where am i _" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\where am i _.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,6 +202,9 @@
   <data name="8924931" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8924931.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Screenshot 2026-05-07 092929" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2026-05-07 092929.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3574480-200 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3574480-200 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,6 +220,9 @@
   <data name="3144456 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3144456 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="28475" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\28475.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="81501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\81501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,7 +232,7 @@
   <data name="descarga (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\descarga (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="descarga (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3144456 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3144456 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

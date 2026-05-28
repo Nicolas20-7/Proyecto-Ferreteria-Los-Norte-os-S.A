@@ -73,6 +73,16 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2424527 {
+            get {
+                object obj = ResourceManager.GetObject("2424527", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2630085__1_ {
             get {
                 object obj = ResourceManager.GetObject("2630085 (1)", resourceCulture);
@@ -106,6 +116,16 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         internal static System.Drawing.Bitmap _3144456__1_ {
             get {
                 object obj = ResourceManager.GetObject("3144456 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3144456__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("3144456 (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +203,16 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3840696 {
+            get {
+                object obj = ResourceManager.GetObject("3840696", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _447206488_972850908177925_6784054875537184452_n_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("447206488_972850908177925_6784054875537184452_n-removebg-preview", resourceCulture);
@@ -196,6 +226,16 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         internal static System.Drawing.Bitmap _447206488_972850908177925_6784054875537184452_n_removebg_preview__1_ {
             get {
                 object obj = ResourceManager.GetObject("447206488_972850908177925_6784054875537184452_n-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _447206488_972850908177925_6784054875537184452_n_removebg_preview__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("447206488_972850908177925_6784054875537184452_n-removebg-preview (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

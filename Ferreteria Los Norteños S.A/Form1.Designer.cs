@@ -32,24 +32,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.PnlBotones = new System.Windows.Forms.Panel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnInicio = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
+            this.btnCredito = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
+            this.btnDevolucion = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
-            this.btnCaja = new System.Windows.Forms.Button();
-            this.btnNuevaventa = new System.Windows.Forms.Button();
             this.btnNuevacompra = new System.Windows.Forms.Button();
-            this.tsbCerrarsesion = new System.Windows.Forms.ToolStripButton();
-            this.tssbHerramientas = new System.Windows.Forms.ToolStripSplitButton();
+            this.btnNuevaventa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCaja = new System.Windows.Forms.Button();
             this.historialDeCréditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlContenedor.SuspendLayout();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlBotones.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -60,8 +59,7 @@
             // pnlContenedor
             // 
             resources.ApplyResources(this.pnlContenedor, "pnlContenedor");
-            this.pnlContenedor.BackColor = System.Drawing.Color.Silver;
-            this.pnlContenedor.Controls.Add(this.panel2);
+            this.pnlContenedor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
             // 
@@ -69,64 +67,56 @@
             // 
             resources.ApplyResources(this.PnlBotones, "PnlBotones");
             this.PnlBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
-            this.PnlBotones.Controls.Add(this.btnInicio);
+            this.PnlBotones.Controls.Add(this.btnCerrar);
+            this.PnlBotones.Controls.Add(this.btnReportes);
+            this.PnlBotones.Controls.Add(this.btnUsuarios);
             this.PnlBotones.Controls.Add(this.btnProveedores);
+            this.PnlBotones.Controls.Add(this.btnCredito);
             this.PnlBotones.Controls.Add(this.btnClientes);
+            this.PnlBotones.Controls.Add(this.btnDevolucion);
+            this.PnlBotones.Controls.Add(this.btnInicio);
             this.PnlBotones.Controls.Add(this.btnProductos);
-            this.PnlBotones.Controls.Add(this.btnCaja);
-            this.PnlBotones.Controls.Add(this.btnNuevaventa);
             this.PnlBotones.Controls.Add(this.btnNuevacompra);
+            this.PnlBotones.Controls.Add(this.btnNuevaventa);
+            this.PnlBotones.Controls.Add(this.pictureBox1);
+            this.PnlBotones.Controls.Add(this.btnCaja);
             this.PnlBotones.Name = "PnlBotones";
             this.PnlBotones.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // toolStrip1
+            // btnCerrar
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbCerrarsesion,
-            this.tssbHerramientas});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.btnCerrar, "btnCerrar");
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.button1_Click_4);
             // 
-            // panel2
+            // btnReportes
             // 
-            this.panel2.BackgroundImage = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.Screenshot_2026_05_07_092929;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
+            this.btnReportes.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnReportes, "btnReportes");
+            this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnReportes.ForeColor = System.Drawing.Color.Black;
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // label3
+            // btnUsuarios
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
-            this.label3.Name = "label3";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(18)))), ((int)(((byte)(59)))));
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btnInicio, "btnInicio");
-            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
-            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
-            this.btnInicio.ForeColor = System.Drawing.Color.Black;
-            this.btnInicio.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.home_icon_home_house_icon_house_icon_free_115535088579crumwqczi__1_;
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.UseVisualStyleBackColor = false;
-            this.btnInicio.Click += new System.EventHandler(this.button1_Click_3);
+            this.btnUsuarios.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnUsuarios, "btnUsuarios");
+            this.btnUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.Black;
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnProveedores
             // 
@@ -137,9 +127,22 @@
             this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnProveedores.ForeColor = System.Drawing.Color.Black;
-            this.btnProveedores.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._664468__1_;
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click_3);
+            // 
+            // btnCredito
+            // 
+            this.btnCredito.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnCredito, "btnCredito");
+            this.btnCredito.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCredito.FlatAppearance.BorderSize = 0;
+            this.btnCredito.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnCredito.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnCredito.ForeColor = System.Drawing.Color.Black;
+            this.btnCredito.Name = "btnCredito";
+            this.btnCredito.UseVisualStyleBackColor = false;
+            this.btnCredito.Click += new System.EventHandler(this.btnCredito_Click);
             // 
             // btnClientes
             // 
@@ -150,9 +153,35 @@
             this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnClientes.ForeColor = System.Drawing.Color.Black;
-            this.btnClientes.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._6522581__1_;
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnDevolucion
+            // 
+            this.btnDevolucion.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnDevolucion, "btnDevolucion");
+            this.btnDevolucion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDevolucion.FlatAppearance.BorderSize = 0;
+            this.btnDevolucion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnDevolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnDevolucion.ForeColor = System.Drawing.Color.Black;
+            this.btnDevolucion.Name = "btnDevolucion";
+            this.btnDevolucion.UseVisualStyleBackColor = false;
+            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnInicio, "btnInicio");
+            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnInicio.ForeColor = System.Drawing.Color.Black;
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // btnProductos
             // 
@@ -163,38 +192,9 @@
             this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnProductos.ForeColor = System.Drawing.Color.Black;
-            this.btnProductos.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._2630085__1_;
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click_1);
-            // 
-            // btnCaja
-            // 
-            this.btnCaja.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btnCaja, "btnCaja");
-            this.btnCaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCaja.FlatAppearance.BorderSize = 0;
-            this.btnCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
-            this.btnCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
-            this.btnCaja.ForeColor = System.Drawing.Color.Black;
-            this.btnCaja.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._335829__1_;
-            this.btnCaja.Name = "btnCaja";
-            this.btnCaja.UseVisualStyleBackColor = false;
-            this.btnCaja.Click += new System.EventHandler(this.btnCaja_Click);
-            // 
-            // btnNuevaventa
-            // 
-            this.btnNuevaventa.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btnNuevaventa, "btnNuevaventa");
-            this.btnNuevaventa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNuevaventa.FlatAppearance.BorderSize = 0;
-            this.btnNuevaventa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
-            this.btnNuevaventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
-            this.btnNuevaventa.ForeColor = System.Drawing.Color.Black;
-            this.btnNuevaventa.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.ticket_tag_icon_142958__1_;
-            this.btnNuevaventa.Name = "btnNuevaventa";
-            this.btnNuevaventa.UseVisualStyleBackColor = false;
-            this.btnNuevaventa.Click += new System.EventHandler(this.btnNuevaventa_Click);
             // 
             // btnNuevacompra
             // 
@@ -205,33 +205,55 @@
             this.btnNuevacompra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
             this.btnNuevacompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
             this.btnNuevacompra.ForeColor = System.Drawing.Color.Black;
-            this.btnNuevacompra.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._3144456__5_;
+            this.btnNuevacompra.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._3144456__1_1;
             this.btnNuevacompra.Name = "btnNuevacompra";
             this.btnNuevacompra.UseVisualStyleBackColor = false;
             this.btnNuevacompra.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tsbCerrarsesion
+            // btnNuevaventa
             // 
-            this.tsbCerrarsesion.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbCerrarsesion.BackColor = System.Drawing.Color.Red;
-            this.tsbCerrarsesion.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbCerrarsesion.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.tsbCerrarsesion, "tsbCerrarsesion");
-            this.tsbCerrarsesion.Name = "tsbCerrarsesion";
-            this.tsbCerrarsesion.Click += new System.EventHandler(this.tsbCerrarsesion_Click);
+            this.btnNuevaventa.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnNuevaventa, "btnNuevaventa");
+            this.btnNuevaventa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevaventa.FlatAppearance.BorderSize = 0;
+            this.btnNuevaventa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnNuevaventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnNuevaventa.ForeColor = System.Drawing.Color.Black;
+            this.btnNuevaventa.Name = "btnNuevaventa";
+            this.btnNuevaventa.UseVisualStyleBackColor = false;
+            this.btnNuevaventa.Click += new System.EventHandler(this.btnNuevaventa_Click);
             // 
-            // tssbHerramientas
+            // pictureBox1
             // 
-            this.tssbHerramientas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.historialDeCréditoToolStripMenuItem});
-            resources.ApplyResources(this.tssbHerramientas, "tssbHerramientas");
-            this.tssbHerramientas.Name = "tssbHerramientas";
+            this.pictureBox1.Image = global::Ferreteria_Los_Norteños_S.A.Properties.Resources._447206488_972850908177925_6784054875537184452_n_removebg_preview__1_1;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCaja
+            // 
+            this.btnCaja.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnCaja, "btnCaja");
+            this.btnCaja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCaja.FlatAppearance.BorderSize = 0;
+            this.btnCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(160)))));
+            this.btnCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(148)))), ((int)(((byte)(109)))));
+            this.btnCaja.ForeColor = System.Drawing.Color.Black;
+            this.btnCaja.Name = "btnCaja";
+            this.btnCaja.UseVisualStyleBackColor = false;
+            this.btnCaja.Click += new System.EventHandler(this.btnCaja_Click);
             // 
             // historialDeCréditoToolStripMenuItem
             // 
-            this.historialDeCréditoToolStripMenuItem.Name = "historialDeCréditoToolStripMenuItem";
             resources.ApplyResources(this.historialDeCréditoToolStripMenuItem, "historialDeCréditoToolStripMenuItem");
+            this.historialDeCréditoToolStripMenuItem.Name = "historialDeCréditoToolStripMenuItem";
             this.historialDeCréditoToolStripMenuItem.Click += new System.EventHandler(this.historialDeCréditoToolStripMenuItem_Click);
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            resources.ApplyResources(this.usuariosToolStripMenuItem, "usuariosToolStripMenuItem");
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -241,15 +263,10 @@
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.PnlBotones);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.pnlContenedor.ResumeLayout(false);
             this.PnlBotones.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,14 +282,15 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnCaja;
         private System.Windows.Forms.Panel PnlBotones;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tsbCerrarsesion;
-        private System.Windows.Forms.ToolStripSplitButton tssbHerramientas;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnCredito;
+        private System.Windows.Forms.Button btnDevolucion;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.ToolStripMenuItem historialDeCréditoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
     }
 }
 
