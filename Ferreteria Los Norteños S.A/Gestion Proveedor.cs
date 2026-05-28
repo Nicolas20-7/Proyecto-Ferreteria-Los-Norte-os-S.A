@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     public partial class Gestion_Proveedor : Form
     {
-        // Lista de proveedores manejada por el formulario
+        
         private List<Proveedor> listaProveedores = new List<Proveedor>();
 
         public Gestion_Proveedor()
@@ -21,19 +22,41 @@ namespace Ferreteria_Los_Norteños_S.A
             InitializeComponent();
             ConfigurarTabla();
 
-            // Asociar manejadores de eventos de botones (si no están asignados en el diseñador)
+            RedondearBoton(btnBuscar, 20);
+            RedondearBoton(btnNuevo, 20);
+            RedondearBoton(btnEditar, 20);
+            RedondearBoton(btnEliminar, 20);
+
+
+
             btnNuevo.Click += btnNuevo_Click;
             btnBuscar.Click += btnBuscar_Click;
             btnEditar.Click += btnEditar_Click;
-            button3.Click += btnEliminar_Click; // button3 es Eliminar en el diseñador
+            btnEliminar.Click += btnEliminar_Click; 
            
             dgvProveedores.CellDoubleClick += dgvProveedores_CellDoubleClick;
 
-            // Cargar datos de ejemplo
+         
             listaProveedores.Add(new Proveedor { Id = 1, Nombre = "Proveedor A", Codigo = "A001", Correo = "a@example.com", Telefono = "555-0100", Cedula = "12345678", Direccion = "Calle 1" });
             listaProveedores.Add(new Proveedor { Id = 2, Nombre = "Proveedor B", Codigo = "B002", Correo = "b@example.com", Telefono = "555-0200", Cedula = "87654321", Direccion = "Calle 2" });
 
             CargarDatos();
+        }
+
+        private void RedondearBoton(Button btn, int radio)
+        {
+            GraphicsPath ruta = new GraphicsPath();
+
+
+            ruta.AddArc(0, 0, radio, radio, 180, 90);
+            ruta.AddArc(btn.Width - radio, 0, radio, radio, 270, 90);
+            ruta.AddArc(btn.Width - radio, btn.Height - radio, radio, radio, 0, 90);
+            ruta.AddArc(0, btn.Height - radio, radio, radio, 90, 90);
+
+            ruta.CloseAllFigures();
+
+
+            btn.Region = new Region(ruta);
         }
 
         private void ConfigurarTabla()
@@ -66,7 +89,7 @@ namespace Ferreteria_Los_Norteños_S.A
             form.Owner = this;
             if (form.ShowDialog() == DialogResult.OK && form.CreatedProveedor != null)
             {
-                // Generar RUC único
+               
                 form.CreatedProveedor.Codigo = GenerarRUCUnico();
                 listaProveedores.Add(form.CreatedProveedor);
                 CargarDatos();
@@ -146,7 +169,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void dgvProveedores_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Abrir edición al hacer doble click en una fila
+            
             if (e.RowIndex >= 0)
             {
                 int id = Convert.ToInt32(dgvProveedores.Rows[e.RowIndex].Cells["Id"].Value);
@@ -159,7 +182,7 @@ namespace Ferreteria_Los_Norteños_S.A
             }
         }
 
-        // Helper para que Editar_Proveedor pueda obtener el proveedor
+  
         public Proveedor GetProveedorById(int id)
         {
             return listaProveedores.FirstOrDefault(p => p.Id == id);
@@ -171,6 +194,11 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void Gestion_Proveedor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
         {
 
         }
