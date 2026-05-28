@@ -82,11 +82,11 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoCompra.Controls.Add(this.lblTipoDocumento);
             this.gbInfoCompra.Controls.Add(this.lblFecha);
             this.gbInfoCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbInfoCompra.Location = new System.Drawing.Point(-2, 133);
+            this.gbInfoCompra.Location = new System.Drawing.Point(-2, 123);
             this.gbInfoCompra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbInfoCompra.Name = "gbInfoCompra";
             this.gbInfoCompra.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gbInfoCompra.Size = new System.Drawing.Size(517, 106);
+            this.gbInfoCompra.Size = new System.Drawing.Size(517, 116);
             this.gbInfoCompra.TabIndex = 1;
             this.gbInfoCompra.TabStop = false;
             this.gbInfoCompra.Text = "Información Compra";
@@ -155,11 +155,12 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnAgregarProveedor
             // 
             this.btnAgregarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
+            this.btnAgregarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarProveedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAgregarProveedor.Location = new System.Drawing.Point(355, 61);
             this.btnAgregarProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(100, 25);
+            this.btnAgregarProveedor.Size = new System.Drawing.Size(100, 34);
             this.btnAgregarProveedor.TabIndex = 3;
             this.btnAgregarProveedor.Text = "Agregar :";
             this.btnAgregarProveedor.UseVisualStyleBackColor = false;
@@ -167,11 +168,12 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnBuscarProveedor
             // 
             this.btnBuscarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
+            this.btnBuscarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarProveedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBuscarProveedor.Location = new System.Drawing.Point(355, 23);
             this.btnBuscarProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBuscarProveedor.Name = "btnBuscarProveedor";
-            this.btnBuscarProveedor.Size = new System.Drawing.Size(96, 25);
+            this.btnBuscarProveedor.Size = new System.Drawing.Size(100, 32);
             this.btnBuscarProveedor.TabIndex = 2;
             this.btnBuscarProveedor.Text = "Buscar :";
             this.btnBuscarProveedor.UseVisualStyleBackColor = false;
@@ -216,7 +218,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbInfoProducto.Name = "gbInfoProducto";
             this.gbInfoProducto.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gbInfoProducto.Size = new System.Drawing.Size(1176, 123);
+            this.gbInfoProducto.Size = new System.Drawing.Size(1057, 123);
             this.gbInfoProducto.TabIndex = 3;
             this.gbInfoProducto.TabStop = false;
             this.gbInfoProducto.Text = "Información de Producto";
@@ -229,7 +231,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnNuevoproducto.Location = new System.Drawing.Point(466, 53);
             this.btnNuevoproducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNuevoproducto.Name = "btnNuevoproducto";
-            this.btnNuevoproducto.Size = new System.Drawing.Size(142, 25);
+            this.btnNuevoproducto.Size = new System.Drawing.Size(142, 24);
             this.btnNuevoproducto.TabIndex = 12;
             this.btnNuevoproducto.Text = "Nuevo Producto :";
             this.btnNuevoproducto.UseVisualStyleBackColor = false;
@@ -323,6 +325,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Location = new System.Drawing.Point(937, 81);
@@ -428,6 +431,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnRegistrar
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(34)))), ((int)(((byte)(33)))));
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
             this.btnRegistrar.Location = new System.Drawing.Point(870, 495);
@@ -441,6 +445,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(871, 539);
