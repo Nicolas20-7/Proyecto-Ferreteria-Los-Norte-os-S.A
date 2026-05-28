@@ -23,7 +23,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.lblTipoDocumento = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.gbInfoProveedor = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregarProveedor = new System.Windows.Forms.Button();
             this.btnBuscarProveedor = new System.Windows.Forms.Button();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.lblProveedor = new System.Windows.Forms.Label();
@@ -137,7 +137,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // gbInfoProveedor
             // 
-            this.gbInfoProveedor.Controls.Add(this.button1);
+            this.gbInfoProveedor.Controls.Add(this.btnAgregarProveedor);
             this.gbInfoProveedor.Controls.Add(this.btnBuscarProveedor);
             this.gbInfoProveedor.Controls.Add(this.txtProveedor);
             this.gbInfoProveedor.Controls.Add(this.lblProveedor);
@@ -152,17 +152,17 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoProveedor.Text = "Información Proveedor";
             this.gbInfoProveedor.Enter += new System.EventHandler(this.gbInfoProveedor_Enter);
             // 
-            // button1
+            // btnAgregarProveedor
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(355, 61);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 25);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Agregar :";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAgregarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
+            this.btnAgregarProveedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregarProveedor.Location = new System.Drawing.Point(355, 61);
+            this.btnAgregarProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
+            this.btnAgregarProveedor.Size = new System.Drawing.Size(100, 25);
+            this.btnAgregarProveedor.TabIndex = 3;
+            this.btnAgregarProveedor.Text = "Agregar :";
+            this.btnAgregarProveedor.UseVisualStyleBackColor = false;
             // 
             // btnBuscarProveedor
             // 
@@ -559,7 +559,7 @@ namespace Ferreteria_Los_Norteños_S.A
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregarProveedor;
         private System.Windows.Forms.Button btnNuevoproducto;
     }
 }

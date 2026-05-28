@@ -14,6 +14,11 @@ namespace Ferreteria_Los_Norteños_S.A
 
             RedondearBoton(btnBuscarProducto, 20);
             RedondearBoton(btnNuevoproducto, 20);
+            RedondearBoton(btnAgregar, 20);
+            RedondearBoton(btnAgregarProveedor, 20);
+            RedondearBoton(btnBuscarProveedor, 20);
+            RedondearBoton(btnRegistrar, 20);
+            RedondearBoton(btnCancelar, 20);
         }
 
         private void RedondearBoton(Button btn, int radio)
