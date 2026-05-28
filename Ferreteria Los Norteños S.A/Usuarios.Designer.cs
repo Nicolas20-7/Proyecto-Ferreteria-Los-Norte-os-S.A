@@ -273,17 +273,19 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Gerente ",
-            "Empleado"});
-            this.comboBox1.Location = new System.Drawing.Point(204, 128);
+            "Empleado",
+            "Cajero ",
+            "Supervisor"});
+            this.comboBox1.Location = new System.Drawing.Point(22, 107);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 21);
+            this.comboBox1.Size = new System.Drawing.Size(210, 21);
             this.comboBox1.TabIndex = 22;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(200, 105);
+            this.label5.Location = new System.Drawing.Point(18, 84);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 20);
             this.label5.TabIndex = 21;
@@ -302,7 +304,7 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(511, 128);
+            this.textBox5.Location = new System.Drawing.Point(285, 108);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(192, 20);
@@ -312,7 +314,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(507, 105);
+            this.label7.Location = new System.Drawing.Point(281, 85);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 20);
             this.label7.TabIndex = 18;
