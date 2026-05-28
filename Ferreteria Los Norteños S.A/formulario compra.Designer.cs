@@ -28,7 +28,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.lblProveedor = new System.Windows.Forms.Label();
             this.gbInfoProducto = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNuevoproducto = new System.Windows.Forms.Button();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.txtPrecioVenta = new System.Windows.Forms.TextBox();
@@ -198,7 +198,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // gbInfoProducto
             // 
             this.gbInfoProducto.BackColor = System.Drawing.Color.Transparent;
-            this.gbInfoProducto.Controls.Add(this.button2);
+            this.gbInfoProducto.Controls.Add(this.btnNuevoproducto);
             this.gbInfoProducto.Controls.Add(this.nudCantidad);
             this.gbInfoProducto.Controls.Add(this.lblCantidad);
             this.gbInfoProducto.Controls.Add(this.txtPrecioVenta);
@@ -221,17 +221,18 @@ namespace Ferreteria_Los_Norteños_S.A
             this.gbInfoProducto.TabStop = false;
             this.gbInfoProducto.Text = "Información de Producto";
             // 
-            // button2
+            // btnNuevoproducto
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(466, 53);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 25);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Nuevo Producto :";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNuevoproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
+            this.btnNuevoproducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoproducto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNuevoproducto.Location = new System.Drawing.Point(466, 53);
+            this.btnNuevoproducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnNuevoproducto.Name = "btnNuevoproducto";
+            this.btnNuevoproducto.Size = new System.Drawing.Size(142, 25);
+            this.btnNuevoproducto.TabIndex = 12;
+            this.btnNuevoproducto.Text = "Nuevo Producto :";
+            this.btnNuevoproducto.UseVisualStyleBackColor = false;
             // 
             // nudCantidad
             // 
@@ -335,6 +336,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // btnBuscarProducto
             // 
             this.btnBuscarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(61)))));
+            this.btnBuscarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarProducto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBuscarProducto.Location = new System.Drawing.Point(135, 52);
             this.btnBuscarProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -343,6 +345,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.btnBuscarProducto.TabIndex = 2;
             this.btnBuscarProducto.Text = "Buscar :";
             this.btnBuscarProducto.UseVisualStyleBackColor = false;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
             // 
             // txtCodProducto
             // 
@@ -453,7 +456,7 @@ namespace Ferreteria_Los_Norteños_S.A
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(502, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(504, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(71, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -462,21 +465,21 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.DarkBlue;
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
             this.textBox6.Location = new System.Drawing.Point(-2, 73);
             this.textBox6.Margin = new System.Windows.Forms.Padding(1);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(1223, 10);
+            this.textBox6.Size = new System.Drawing.Size(1064, 10);
             this.textBox6.TabIndex = 34;
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.DarkBlue;
-            this.textBox5.Location = new System.Drawing.Point(-31, -4);
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(108)))), ((int)(((byte)(134)))));
+            this.textBox5.Location = new System.Drawing.Point(-2, -4);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(1253, 32);
+            this.textBox5.Size = new System.Drawing.Size(1061, 32);
             this.textBox5.TabIndex = 33;
             // 
             // formulario_compra
@@ -557,6 +560,6 @@ namespace Ferreteria_Los_Norteños_S.A
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNuevoproducto;
     }
 }
