@@ -19,7 +19,7 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             InitializeComponent();
          
-            button2.Click += (s, e) => { this.DialogResult = DialogResult.Cancel; this.Close(); };
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Ferreteria_Los_Norteños_S.A
                 Nombre = textBox1.Text?.Trim(),
                 Contrasena = textBox2.Text,
                 Correo = textBox3.Text?.Trim(),
-                Activo = checkBox1.Checked
+                
             };
 
             this.DialogResult = DialogResult.OK;

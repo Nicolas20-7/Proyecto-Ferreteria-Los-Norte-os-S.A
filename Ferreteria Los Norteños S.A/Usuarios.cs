@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -18,13 +19,24 @@ namespace Ferreteria_Los_Norteños_S.A
             ConfigurarGrid();
 
 
-            button2.Click += Button2_Click;
-            button3.Click += Button3_Click; 
-            button4.Click += Button4_Click; 
-            button5.Click += Button5_Click;
-            button1.Click += Button1_Click; 
+            btnNuevoUsuario.Click += Button2_Click;
+            btnEditarUsuario.Click += Button3_Click; 
+            btnEliminar.Click += Button4_Click; 
+            btnLimpiar.Click += Button5_Click;
+            btnBuscar.Click += Button1_Click; 
 
- 
+            RedondearBoton(btnLimpiar, 20);
+            RedondearBoton(btnGuardar, 20);
+            RedondearBoton(btnEditarUsuario, 20);
+            RedondearBoton(btnNuevoUsuario, 20);
+            RedondearBoton(btnBuscar, 20);
+            RedondearBoton(btnEliminar, 20);
+
+
+
+
+
+
             if (listaUsuarios.Count == 0)
             {
                 listaUsuarios.Add(new Usuario { Id = nextUserId++, Nombre = "admin", Contrasena = "admin", Correo = "admin@empresa.com", Activo = true });
@@ -32,6 +44,22 @@ namespace Ferreteria_Los_Norteños_S.A
             }
 
             CargarDatos();
+        }
+
+        private void RedondearBoton(Button btn, int radio)
+        {
+            GraphicsPath ruta = new GraphicsPath();
+
+
+            ruta.AddArc(0, 0, radio, radio, 180, 90);
+            ruta.AddArc(btn.Width - radio, 0, radio, radio, 270, 90);
+            ruta.AddArc(btn.Width - radio, btn.Height - radio, radio, radio, 0, 90);
+            ruta.AddArc(0, btn.Height - radio, radio, radio, 90, 90);
+
+            ruta.CloseAllFigures();
+
+
+            btn.Region = new Region(ruta);
         }
 
         private void ConfigurarGrid()
@@ -180,6 +208,16 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
 
         }

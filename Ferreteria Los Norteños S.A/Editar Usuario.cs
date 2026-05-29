@@ -24,11 +24,11 @@ namespace Ferreteria_Los_Norteños_S.A
          
             textBox1.Text = usuario?.Nombre;
             textBox2.Text = usuario?.Contrasena;
-            textBox3.Text = usuario?.Correo;
+       
             checkBox2.Checked = usuario?.Activo ?? false;
 
             button1.Click += Button1_Click; 
-            button2.Click += Button2_Click; 
+           
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace Ferreteria_Los_Norteños_S.A
                
                 usuario.Nombre = textBox1.Text?.Trim();
                 usuario.Contrasena = textBox2.Text;
-                usuario.Correo = textBox3.Text?.Trim();
+              
                 usuario.Activo = checkBox2.Checked;
             }
 
