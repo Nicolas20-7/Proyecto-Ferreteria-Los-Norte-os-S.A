@@ -19,16 +19,15 @@ namespace Ferreteria_Los_Norteños_S.A
             ConfigurarGrid();
 
 
-            btnNuevoUsuario.Click += Button2_Click;
-            btnEditarUsuario.Click += Button3_Click; 
+            btnGuardar.Click += Button2_Click;
+            btnEditar.Click += Button3_Click; 
             btnEliminar.Click += Button4_Click; 
             btnLimpiar.Click += Button5_Click;
             btnBuscar.Click += Button1_Click; 
 
             RedondearBoton(btnLimpiar, 20);
             RedondearBoton(btnGuardar, 20);
-            RedondearBoton(btnEditarUsuario, 20);
-            RedondearBoton(btnNuevoUsuario, 20);
+            RedondearBoton(btnEditar, 20);
             RedondearBoton(btnBuscar, 20);
             RedondearBoton(btnEliminar, 20);
 
@@ -218,6 +217,11 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
