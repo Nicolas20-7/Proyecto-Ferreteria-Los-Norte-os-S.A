@@ -42,6 +42,11 @@ namespace Ferreteria_Los_Norteños_S.A
             this.txtCodProducto = new System.Windows.Forms.TextBox();
             this.lblCodProducto = new System.Windows.Forms.Label();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTotalPagar = new System.Windows.Forms.Label();
             this.txtTotalPagar = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
@@ -49,11 +54,6 @@ namespace Ferreteria_Los_Norteños_S.A
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbInfoCompra.SuspendLayout();
             this.gbInfoProveedor.SuspendLayout();
             this.gbInfoProducto.SuspendLayout();
@@ -325,11 +325,11 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(55)))), ((int)(((byte)(20)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(937, 81);
+            this.btnAgregar.Location = new System.Drawing.Point(901, 81);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(108, 27);
@@ -389,6 +389,31 @@ namespace Ferreteria_Los_Norteños_S.A
             this.dgvDetalle.Size = new System.Drawing.Size(812, 252);
             this.dgvDetalle.TabIndex = 12;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Producto";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Precio Compra";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Precio Venta";
+            this.Column1.Name = "Column1";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Sub Total";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
             // lblTotalPagar
             // 
             this.lblTotalPagar.AutoSize = true;
@@ -412,7 +437,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(34)))), ((int)(((byte)(33)))));
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(55)))), ((int)(((byte)(20)))));
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
@@ -426,7 +451,7 @@ namespace Ferreteria_Los_Norteños_S.A
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
@@ -468,31 +493,6 @@ namespace Ferreteria_Los_Norteños_S.A
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(1061, 32);
             this.textBox5.TabIndex = 33;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Producto";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Precio Compra";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Precio Venta";
-            this.Column1.Name = "Column1";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Sub Total";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // formulario_compra
             // 
