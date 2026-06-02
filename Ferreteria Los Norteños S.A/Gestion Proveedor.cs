@@ -16,6 +16,7 @@ namespace Ferreteria_Los_Norteños_S.A
     {
         
         private List<Proveedor> listaProveedores = new List<Proveedor>();
+        // Se eliminó campo btnNuevo porque el botón está definido en el diseñador como btnLimpiar/otros
 
         public Gestion_Proveedor()
         {
@@ -23,17 +24,20 @@ namespace Ferreteria_Los_Norteños_S.A
             ConfigurarTabla();
 
             RedondearBoton(btnBuscar, 20);
-            RedondearBoton(btnNuevo, 20);
+            RedondearBoton(btnGuardar, 20);
             RedondearBoton(btnEditar, 20);
             RedondearBoton(btnEliminar, 20);
+            RedondearBoton(btnLimpiar, 20);
 
 
 
-            btnNuevo.Click += btnNuevo_Click;
+
+
             btnBuscar.Click += btnBuscar_Click;
             btnEditar.Click += btnEditar_Click;
             btnEliminar.Click += btnEliminar_Click; 
-           
+            btnGuardar.Click += btnGuardar_Click;
+
             dgvProveedores.CellDoubleClick += dgvProveedores_CellDoubleClick;
 
          
@@ -65,7 +69,7 @@ namespace Ferreteria_Los_Norteños_S.A
             dgvProveedores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
            
             dgvProveedores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            this.BackColor = Color.Gray;
+            this.BackColor = Color.White;
         }
 
         private void CargarDatos()
@@ -162,7 +166,7 @@ namespace Ferreteria_Los_Norteños_S.A
             }
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -195,7 +199,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void Gestion_Proveedor_Load(object sender, EventArgs e)
         {
-
+                    listaProveedores.Clear();
         }
 
         private void btnBuscar_Click_1(object sender, EventArgs e)

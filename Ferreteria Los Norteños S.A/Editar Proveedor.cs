@@ -37,7 +37,7 @@ namespace Ferreteria_Los_Norteños_S.A
                     textBox3.Text = proveedor.Correo;
                     textBox4.Text = proveedor.Telefono;
                     textBox5.Text = proveedor.Direccion;
-                    textBox6.Text = proveedor.Cedula;
+                   
                 }
             }
         }
@@ -54,7 +54,7 @@ namespace Ferreteria_Los_Norteños_S.A
                     proveedor.Correo = textBox3.Text;
                     proveedor.Telefono = textBox4.Text;
                     proveedor.Direccion = textBox5.Text;
-                    proveedor.Cedula = textBox6.Text;
+                 
                 }
             }
 

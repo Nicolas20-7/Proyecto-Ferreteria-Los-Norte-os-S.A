@@ -13,27 +13,28 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     public partial class Proveedor_Nuevo : Form
     {
+
+
         public Proveedor CreatedProveedor { get; private set; }
 
         public Proveedor_Nuevo()
         {
             InitializeComponent();
-
-            btnGuardar.Click += BtnGuardar_Click;
+            // Conectar el evento al botón creado por el diseñador (button1)
+            this.button1.Click += BtnGuardar_Click;
   
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            // Crear nuevo proveedor desde los campos
+            // Crear nuevo proveedor desde los campos del diseñador (textBox1..)
             CreatedProveedor = new Proveedor
             {
                 Id = new Random().Next(1000, 9999),
-                Nombre = txtNombre.Text,
-                Correo = txtCorreo.Text,
-                Telefono = txtNumero.Text,
-            
-                Direccion = txtDireccion.Text,
+                Nombre = textBox1.Text,
+                Correo = textBox3.Text,
+                Telefono = textBox6.Text,
+                Direccion = textBox4.Text,
                 Codigo = "" // Se generará en Gestion_Proveedor
             };
 
