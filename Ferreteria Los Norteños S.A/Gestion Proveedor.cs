@@ -14,10 +14,11 @@ namespace Ferreteria_Los_Norteños_S.A
 {
     public partial class Gestion_Proveedor : Form
     {
+
+
         
         private List<Proveedor> listaProveedores = new List<Proveedor>();
-        // Se eliminó campo btnNuevo porque el botón está definido en el diseñador como btnLimpiar/otros
-
+       
         public Gestion_Proveedor()
         {
             InitializeComponent();
@@ -203,6 +204,11 @@ namespace Ferreteria_Los_Norteños_S.A
         }
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_Proveedor));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -43,21 +48,16 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtCorreoElectronico = new System.Windows.Forms.TextBox();
+            this.txtNumerodeTelefono = new System.Windows.Forms.TextBox();
+            this.txtNumeroRuc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtNombreDelProveedor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -98,6 +98,42 @@
             this.dgvProveedores.Size = new System.Drawing.Size(791, 220);
             this.dgvProveedores.TabIndex = 1;
             this.dgvProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Nombre";
+            this.Column2.HeaderText = "Nombre del proveedor";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Telefono";
+            this.Column5.HeaderText = "Número de Teléfono";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Codigo";
+            this.Column3.HeaderText = "Numero Ruc";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Correo";
+            this.Column4.HeaderText = "Correo electrónico";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Direccion";
+            this.Column7.HeaderText = "Dirección";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 150;
             // 
             // btnEliminar
             // 
@@ -194,15 +230,15 @@
             this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnLimpiar);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtDireccion);
+            this.groupBox1.Controls.Add(this.txtCorreoElectronico);
+            this.groupBox1.Controls.Add(this.txtNumerodeTelefono);
+            this.groupBox1.Controls.Add(this.txtNumeroRuc);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtNombreDelProveedor);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Location = new System.Drawing.Point(24, 208);
             this.groupBox1.Name = "groupBox1";
@@ -236,12 +272,13 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.Window;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(213, 164);
+            this.btnGuardar.Location = new System.Drawing.Point(208, 164);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(122, 30);
             this.btnGuardar.TabIndex = 67;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // btnLimpiar
             // 
@@ -259,53 +296,53 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // textBox6
+            // txtDireccion
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(636, 54);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(237, 22);
-            this.textBox6.TabIndex = 65;
+            this.txtDireccion.BackColor = System.Drawing.Color.White;
+            this.txtDireccion.Location = new System.Drawing.Point(636, 54);
+            this.txtDireccion.Multiline = true;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(237, 22);
+            this.txtDireccion.TabIndex = 65;
             // 
-            // textBox5
+            // txtCorreoElectronico
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtCorreoElectronico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(330, 114);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(237, 22);
-            this.textBox5.TabIndex = 64;
+            this.txtCorreoElectronico.BackColor = System.Drawing.Color.White;
+            this.txtCorreoElectronico.Location = new System.Drawing.Point(330, 114);
+            this.txtCorreoElectronico.Multiline = true;
+            this.txtCorreoElectronico.Name = "txtCorreoElectronico";
+            this.txtCorreoElectronico.Size = new System.Drawing.Size(237, 22);
+            this.txtCorreoElectronico.TabIndex = 64;
             // 
-            // textBox4
+            // txtNumerodeTelefono
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtNumerodeTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(330, 54);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(237, 22);
-            this.textBox4.TabIndex = 63;
+            this.txtNumerodeTelefono.BackColor = System.Drawing.Color.White;
+            this.txtNumerodeTelefono.Location = new System.Drawing.Point(330, 54);
+            this.txtNumerodeTelefono.Multiline = true;
+            this.txtNumerodeTelefono.Name = "txtNumerodeTelefono";
+            this.txtNumerodeTelefono.Size = new System.Drawing.Size(237, 22);
+            this.txtNumerodeTelefono.TabIndex = 63;
             // 
-            // textBox3
+            // txtNumeroRuc
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtNumeroRuc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(26, 114);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 22);
-            this.textBox3.TabIndex = 62;
+            this.txtNumeroRuc.BackColor = System.Drawing.Color.White;
+            this.txtNumeroRuc.Location = new System.Drawing.Point(26, 114);
+            this.txtNumeroRuc.Multiline = true;
+            this.txtNumeroRuc.Name = "txtNumeroRuc";
+            this.txtNumeroRuc.Size = new System.Drawing.Size(237, 22);
+            this.txtNumeroRuc.TabIndex = 62;
             // 
             // label4
             // 
@@ -363,15 +400,15 @@
             this.label7.TabIndex = 54;
             this.label7.Text = "Correo Electronico :";
             // 
-            // textBox7
+            // txtNombreDelProveedor
             // 
-            this.textBox7.AccessibleDescription = "";
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(26, 54);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(237, 22);
-            this.textBox7.TabIndex = 53;
+            this.txtNombreDelProveedor.AccessibleDescription = "";
+            this.txtNombreDelProveedor.BackColor = System.Drawing.Color.White;
+            this.txtNombreDelProveedor.Location = new System.Drawing.Point(26, 54);
+            this.txtNombreDelProveedor.Multiline = true;
+            this.txtNombreDelProveedor.Name = "txtNombreDelProveedor";
+            this.txtNombreDelProveedor.Size = new System.Drawing.Size(237, 22);
+            this.txtNombreDelProveedor.TabIndex = 53;
             // 
             // label8
             // 
@@ -386,42 +423,6 @@
             this.label8.Size = new System.Drawing.Size(206, 20);
             this.label8.TabIndex = 52;
             this.label8.Text = "  Nombre del Proveedor :";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Nombre";
-            this.Column2.HeaderText = "Nombre del proveedor";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Telefono";
-            this.Column5.HeaderText = "Número de Teléfono";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Codigo";
-            this.Column3.HeaderText = "Numero Ruc";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Correo";
-            this.Column4.HeaderText = "Correo electrónico";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Direccion";
-            this.Column7.HeaderText = "Dirección";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 150;
             // 
             // Gestion_Proveedor
             // 
@@ -472,16 +473,16 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNumeroRuc;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtNombreDelProveedor;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtCorreoElectronico;
+        private System.Windows.Forms.TextBox txtNumerodeTelefono;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnEditar;
