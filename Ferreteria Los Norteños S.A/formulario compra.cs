@@ -39,13 +39,13 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void ConfigurarFormulario()
         {
-        
+
             if (this.dateTimePicker1 != null)
             {
                 this.dateTimePicker1.Value = DateTime.Now;
             }
 
- 
+
             if (this.cboTipoDocumento != null && this.cboTipoDocumento.Items.Count > 0)
             {
                 this.cboTipoDocumento.SelectedIndex = 0;
