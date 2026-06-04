@@ -78,7 +78,7 @@ namespace Ferreteria_Los_Norteños_S.A
             dgvProveedores.DataSource = null;
             dgvProveedores.DataSource = listaProveedores.Select(p => new
             {
-                p.Id,
+                
                 p.Nombre,
                 p.Codigo,
                 Correo = p.Correo,
@@ -119,7 +119,7 @@ namespace Ferreteria_Los_Norteños_S.A
                                                        (!string.IsNullOrEmpty(p.Codigo) && p.Codigo.ToLower().Contains(filtro))).ToList();
             dgvProveedores.DataSource = filtrados.Select(p => new
             {
-                p.Id,
+              
                 p.Nombre,
                 p.Codigo,
                 Correo = p.Correo,
