@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Ferreteria_Los_Norteños_S.A
 {
-    public partial class Gestion_Proveedor : Form
+    public partial class Gestion_Proveedor : Form, IGestionProveedor
     {
 
 
@@ -29,6 +29,7 @@ namespace Ferreteria_Los_Norteños_S.A
             RedondearBoton(btnEditar, 20);
             RedondearBoton(btnEliminar, 20);
             RedondearBoton(btnLimpiar, 20);
+            
 
 
 
@@ -38,6 +39,8 @@ namespace Ferreteria_Los_Norteños_S.A
             btnEditar.Click += btnEditar_Click;
             btnEliminar.Click += btnEliminar_Click; 
             btnGuardar.Click += btnGuardar_Click;
+
+            btnLimpiar.Click += btnLimpiar_Click;
 
             dgvProveedores.CellDoubleClick += dgvProveedores_CellDoubleClick;
 
@@ -78,6 +81,7 @@ namespace Ferreteria_Los_Norteños_S.A
             dgvProveedores.DataSource = null;
             dgvProveedores.DataSource = listaProveedores.Select(p => new
             {
+                Id = p.Id,
                 
                 p.Nombre,
                 p.Codigo,
@@ -88,7 +92,7 @@ namespace Ferreteria_Los_Norteños_S.A
             }).ToList();
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             var form = new Proveedor_Nuevo();
             form.Owner = this;
@@ -136,7 +140,9 @@ namespace Ferreteria_Los_Norteños_S.A
                 return;
             }
 
-            int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells["Id"].Value);
+            // csharp
+int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells[0].Value); // ajustar índice// csharp
+
             var proveedor = listaProveedores.FirstOrDefault(p => p.Id == id);
             if (proveedor == null)
             {
@@ -156,7 +162,7 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             if (dgvProveedores.SelectedRows.Count > 0)
             {
-                var id = (int)dgvProveedores.SelectedRows[0].Cells["Id"].Value;
+                var id = (int)dgvProveedores.SelectedRows[0].Cells["ColumnId"].Value;
                 listaProveedores.RemoveAll(p => p.Id == id);
                 CargarDatos();
                 MessageBox.Show("Proveedor eliminado con éxito.");
@@ -167,9 +173,16 @@ namespace Ferreteria_Los_Norteños_S.A
             }
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+   
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // Limpiar campos del formulario (groupBox1)
+            textBox3.Clear(); // correo/ruc según diseño
+            textBox4.Clear(); // telefono
+            textBox5.Clear(); // direccion
+            textBox6.Clear(); // otro campo
+            textBox7.Clear(); // nombre
         }
 
         private void dgvProveedores_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -177,7 +190,7 @@ namespace Ferreteria_Los_Norteños_S.A
             
             if (e.RowIndex >= 0)
             {
-                int id = Convert.ToInt32(dgvProveedores.Rows[e.RowIndex].Cells["Id"].Value);
+                int id = Convert.ToInt32(dgvProveedores.Rows[e.RowIndex].Cells["ColumnId"].Value);
                 var editarForm = new Editar_Proveedor(id);
                 editarForm.Owner = this;
                 if (editarForm.ShowDialog() == DialogResult.OK)
@@ -190,7 +203,44 @@ namespace Ferreteria_Los_Norteños_S.A
   
         public Proveedor GetProveedorById(int id)
         {
+            return GetById(id);
+        }
+
+        // Implementación de la interfaz IGestionProveedor
+        public List<Proveedor> GetAll()
+        {
+            return listaProveedores;
+        }
+
+        public Proveedor GetById(int id)
+        {
             return listaProveedores.FirstOrDefault(p => p.Id == id);
+        }
+
+        public void Add(Proveedor proveedor)
+        {
+            if (proveedor != null)
+            {
+                listaProveedores.Add(proveedor);
+                CargarDatos();
+            }
+        }
+
+        public void Update(Proveedor proveedor)
+        {
+            if (proveedor == null) return;
+            int idx = listaProveedores.FindIndex(p => p.Id == proveedor.Id);
+            if (idx >= 0)
+            {
+                listaProveedores[idx] = proveedor;
+                CargarDatos();
+            }
+        }
+
+        public void Remove(int id)
+        {
+            listaProveedores.RemoveAll(p => p.Id == id);
+            CargarDatos();
         }
 
         private void label1_Click(object sender, EventArgs e)
