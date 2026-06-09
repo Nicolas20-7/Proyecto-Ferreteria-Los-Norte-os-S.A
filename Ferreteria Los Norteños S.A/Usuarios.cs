@@ -27,9 +27,9 @@ namespace Ferreteria_Los_Norteños_S.A
 
             RedondearBoton(btnLimpiar, 20);
             RedondearBoton(btnGuardar, 20);
-            RedondearBoton(btnEditar, 20);
+         
             RedondearBoton(btnBuscar, 20);
-            RedondearBoton(btnEliminar, 20);
+          
 
 
 
