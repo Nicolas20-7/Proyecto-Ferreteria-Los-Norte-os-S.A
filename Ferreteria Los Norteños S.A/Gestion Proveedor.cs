@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Ferreteria_Los_Norteños_S.A
 {
-    public partial class Gestion_Proveedor : Form, IGestionProveedor
+    public partial class Gestion_Proveedor : Form, 
     {
 
 
