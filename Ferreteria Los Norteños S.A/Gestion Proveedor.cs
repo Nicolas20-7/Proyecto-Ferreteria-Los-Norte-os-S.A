@@ -33,7 +33,6 @@ namespace Ferreteria_Los_Norteños_S.A
 
 
 
-            // Usaremos los manejadores definidos en el diseñador; evitar suscribir handlers duplicados
             btnEditar.Click += btnEditar_Click;
             btnEliminar.Click += btnEliminar_Click;
             btnLimpiar.Click += btnLimpiar_Click;
@@ -70,12 +69,12 @@ namespace Ferreteria_Los_Norteños_S.A
            
             dgvProveedores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.BackColor = Color.White;
-            dgvProveedores.AutoGenerateColumns = false; // columnas definidas en diseñador
+            dgvProveedores.AutoGenerateColumns = false; 
         }
 
         private void CargarDatos()
         {
-            // Bind directo a la lista de proveedores para poder obtener el objeto en DataBoundItem
+            
             dgvProveedores.DataSource = null;
             dgvProveedores.DataSource = listaProveedores.ToList();
         }
@@ -104,10 +103,10 @@ namespace Ferreteria_Los_Norteños_S.A
             var fila = dgvProveedores.SelectedRows[0];
             if (fila.DataBoundItem is Proveedor proveedor)
             {
-                // Cargar datos en los campos para edición
+                
                 _editingId = proveedor.Id;
                 textBox7.Text = proveedor.Nombre;
-                textBox3.Text = proveedor.Codigo; // RUC
+                textBox3.Text = proveedor.Codigo; 
                 textBox4.Text = proveedor.Telefono;
                 textBox5.Text = proveedor.Direccion;
                 textBox6.Text = proveedor.Correo;
@@ -122,7 +121,6 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             if (dgvProveedores.SelectedRows.Count > 0)
             {
-                // Obtener el objeto enlazado de la fila seleccionada en lugar de depender del nombre de la columna
                 var fila = dgvProveedores.SelectedRows[0];
                 if (fila.DataBoundItem is Proveedor proveedor)
                 {
@@ -149,7 +147,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            // Limpiar campos del formulario (groupBox1)
+      
             textBox3.Clear(); // correo/ruc según diseño
             textBox4.Clear(); // telefono
             textBox5.Clear(); // direccion
@@ -182,7 +180,6 @@ namespace Ferreteria_Los_Norteños_S.A
             return GetById(id);
         }
 
-        // Implementación de la interfaz IGestionProveedor
         public List<Proveedor> GetAll()
         {
             return listaProveedores;
@@ -226,12 +223,10 @@ namespace Ferreteria_Los_Norteños_S.A
 
         private void Gestion_Proveedor_Load(object sender, EventArgs e)
         {
-            // No limpiar la lista aquí - se inicializa en el constructor
         }
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-            // reutilizar la lógica de búsqueda: si txtBuscar vacío, mostrar todo
             var filtro = txtBuscar.Text?.Trim();
             if (string.IsNullOrEmpty(filtro))
             {
@@ -267,7 +262,7 @@ namespace Ferreteria_Los_Norteños_S.A
             }
             if (!string.IsNullOrEmpty(correo))
             {
-                // Validación simple de email
+              
                 if (!Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
                 {
                     MessageBox.Show("Ingrese un correo electrónico válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -278,7 +273,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
             if (_editingId.HasValue)
             {
-                // actualizar
+              
                 var existing = listaProveedores.FirstOrDefault(p => p.Id == _editingId.Value);
                 if (existing != null)
                 {
@@ -294,7 +289,7 @@ namespace Ferreteria_Los_Norteños_S.A
             }
             else
             {
-                // crear
+         
                 var nuevoId = listaProveedores.Any() ? listaProveedores.Max(p => p.Id) + 1 : 1;
                 var codigoFinal = string.IsNullOrEmpty(ruc) ? GenerarRUCUnico() : ruc;
                 var nuevo = new Proveedor
@@ -311,13 +306,33 @@ namespace Ferreteria_Los_Norteños_S.A
                 MessageBox.Show("Proveedor agregado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            // limpiar campos
+    
             btnLimpiar_Click(sender, e);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) &&
+               e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            formulario_ayuda ayuda = new formulario_ayuda();
+            ayuda.Show();
         }
     }
 }

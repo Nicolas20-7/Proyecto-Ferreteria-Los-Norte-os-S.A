@@ -83,6 +83,36 @@ namespace Ferreteria_Los_Norteños_S.A.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2026_06_11_083728 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2026-06-11 083728", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2026_06_11_092058 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2026-06-11 092058", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_11_jun_2026__09_48_38_a_m_ {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image 11 jun 2026, 09_48_38 a.m.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_09_at_2_06_45_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-09 at 2.06.45 PM", resourceCulture);

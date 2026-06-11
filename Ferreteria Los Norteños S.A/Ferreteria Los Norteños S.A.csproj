@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formulario ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulario ayuda.Designer.cs">
+      <DependentUpon>formulario ayuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="ProveedorDatos.cs" />
     <EmbeddedResource Include="Editar Proveedor.resx">
       <DependentUpon>Editar Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulario ayuda.resx">
+      <DependentUpon>formulario ayuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Proveedor.resx">
       <DependentUpon>Gestion Proveedor.cs</DependentUpon>
@@ -120,6 +129,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2026-06-10 at 9.05.32 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2026-06-11 083728.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2026-06-11 092058.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image 11 jun 2026, 09_48_38 a.m..png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

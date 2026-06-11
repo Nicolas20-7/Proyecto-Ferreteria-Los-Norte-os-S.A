@@ -56,7 +56,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAyuda = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -83,9 +83,8 @@
             // 
             this.dgvProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvProveedores.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvProveedores.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvProveedores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dgvProveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvProveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProveedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
@@ -297,6 +296,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(237, 22);
             this.textBox4.TabIndex = 63;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -390,16 +390,17 @@
             this.label8.TabIndex = 52;
             this.label8.Text = "  Nombre del Proveedor :";
             // 
-            // button1
+            // btnAyuda
             // 
-            this.button1.BackgroundImage = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.WhatsApp_Image_2026_06_10_at_9_05_32_PM;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(1003, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 40);
-            this.button1.TabIndex = 69;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAyuda.BackgroundImage = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.WhatsApp_Image_2026_06_10_at_9_05_32_PM;
+            this.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAyuda.Location = new System.Drawing.Point(1003, 35);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(41, 40);
+            this.btnAyuda.TabIndex = 69;
+            this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnEditar
             // 
@@ -450,7 +451,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1056, 637);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -514,7 +515,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAyuda;
     }
 
 }
