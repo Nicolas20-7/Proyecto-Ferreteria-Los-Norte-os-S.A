@@ -31,6 +31,7 @@ namespace Ferreteria_Los_Norteños_S.A
             if (btnLimpiar != null) RedondearBoton(btnLimpiar, 20);
             if (btnGuardar != null) RedondearBoton(btnGuardar, 20);
             if (btnBuscar != null) RedondearBoton(btnBuscar, 20);
+            if (btnEditar != null) RedondearBoton(btnEditar, 20);
           
 
 
@@ -93,6 +94,7 @@ namespace Ferreteria_Los_Norteños_S.A
                 dataGridView1.Columns[4].DataPropertyName = "Activo"; 
                 dataGridView1.Columns[5].DataPropertyName = "Id"; 
                 dataGridView1.Columns[5].Visible = false;
+                // No añadir columnas de acción; mantener las columnas originales
             }
         }
 
