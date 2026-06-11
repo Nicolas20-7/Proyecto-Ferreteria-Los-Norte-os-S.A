@@ -19,6 +19,7 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             InitializeComponent();
             ConfigurarGrid();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             if (btnGuardar != null) btnGuardar.Click += btnGuardar_Click;
             if (btnEditar != null) btnEditar.Click += btnEditar_Click;
             if (btnEliminar != null) btnEliminar.Click += btnEliminar_Click;
@@ -27,17 +28,13 @@ namespace Ferreteria_Los_Norteños_S.A
           
 
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
 
             if (btnLimpiar != null) RedondearBoton(btnLimpiar, 20);
             if (btnGuardar != null) RedondearBoton(btnGuardar, 20);
             if (btnBuscar != null) RedondearBoton(btnBuscar, 20);
             if (btnEditar != null) RedondearBoton(btnEditar, 20);
           
-
-
-
-
-
 
             if (listaUsuarios.Count == 0)
             {
@@ -70,8 +67,8 @@ namespace Ferreteria_Los_Norteños_S.A
             dataGridView1.ReadOnly = true;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            // If designer did not create columns, add them programmatically
+            
+         
             if (dataGridView1.Columns.Count < 6)
             {
                 dataGridView1.Columns.Clear();
@@ -82,8 +79,10 @@ namespace Ferreteria_Los_Norteños_S.A
                 var colRol = new DataGridViewTextBoxColumn { Name = "colRol", HeaderText = "Rol", DataPropertyName = "Rol" };
                 var colActivo = new DataGridViewTextBoxColumn { Name = "colActivo", HeaderText = "Estado", DataPropertyName = "Activo" };
                 var colId = new DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id", DataPropertyName = "Id", Visible = false };
+                var colEditar = new DataGridViewButtonColumn { Name = "colEditar", HeaderText = "", Text = "Editar", UseColumnTextForButtonValue = true, DataPropertyName = "" };
+                var colEliminar = new DataGridViewButtonColumn { Name = "colEliminar", HeaderText = "", Text = "Eliminar", UseColumnTextForButtonValue = true, DataPropertyName = "" };
 
-                dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNombre, colUsername, colCorreo, colRol, colActivo, colId });
+                dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNombre, colUsername, colCorreo, colRol, colActivo, colId, colEditar, colEliminar });
             }
             else
             {
@@ -93,13 +92,19 @@ namespace Ferreteria_Los_Norteños_S.A
                 dataGridView1.Columns[3].DataPropertyName = "Rol"; 
                 dataGridView1.Columns[4].DataPropertyName = "Activo"; 
                 dataGridView1.Columns[5].DataPropertyName = "Id"; 
-                dataGridView1.Columns[5].Visible = false;
-                // No añadir columnas de acción; mantener las columnas originales
+                dataGridView1.Columns[5].Visible = true;
+              
             }
         }
 
         private void CargarDatos()
         {
+            // Asegurar que las columnas botón usen el texto definido
+            var editarCol = dataGridView1.Columns.Cast<DataGridViewColumn>().FirstOrDefault(c => c.Name == "colEditar") as DataGridViewButtonColumn;
+            var eliminarCol = dataGridView1.Columns.Cast<DataGridViewColumn>().FirstOrDefault(c => c.Name == "colEliminar") as DataGridViewButtonColumn;
+            if (editarCol != null) editarCol.UseColumnTextForButtonValue = true;
+            if (eliminarCol != null) eliminarCol.UseColumnTextForButtonValue = true;
+
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = listaUsuarios.Select(u => new {
                 u.Nombre,
@@ -109,6 +114,14 @@ namespace Ferreteria_Los_Norteños_S.A
                 Activo = u.Activo ? "Activo" : "Inactivo",
                 u.Id
             }).ToList();
+
+            // Forzar explícitamente el texto de los botones en cada fila (sobrescribe valores numéricos)
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (editarCol != null && dataGridView1.Columns.Contains("colEditar")) row.Cells["colEditar"].Value = editarCol.Text ?? "Editar";
+                if (eliminarCol != null && dataGridView1.Columns.Contains("colEliminar")) row.Cells["colEliminar"].Value = eliminarCol.Text ?? "Eliminar";
+            }
+            dataGridView1.Refresh();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -339,6 +352,17 @@ namespace Ferreteria_Los_Norteños_S.A
         private void btnEditar_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ayuda ayuda = new ayuda();
+            ayuda.Show();
         }
     }
 }
