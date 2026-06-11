@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_Proveedor));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -59,6 +53,12 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,47 +100,6 @@
             this.dgvProveedores.Size = new System.Drawing.Size(904, 232);
             this.dgvProveedores.TabIndex = 1;
             this.dgvProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Nombre";
-            this.Column2.HeaderText = "Nombre del proveedor";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Telefono";
-            this.Column5.HeaderText = "Número de Teléfono";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Codigo";
-            this.Column3.HeaderText = "Numero Ruc";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Correo";
-            this.Column4.HeaderText = "Correo electrónico";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Direccion";
-            this.Column7.HeaderText = "Dirección";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 150;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Acciones";
-            this.Column1.Name = "Column1";
             // 
             // label2
             // 
@@ -430,6 +389,47 @@
             this.btnEliminar.Size = new System.Drawing.Size(25, 23);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Nombre";
+            this.Column2.HeaderText = "Nombre del proveedor";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Telefono";
+            this.Column5.HeaderText = "Número de Teléfono";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Codigo";
+            this.Column3.HeaderText = "Numero Ruc";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Correo";
+            this.Column4.HeaderText = "Correo electrónico";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Direccion";
+            this.Column7.HeaderText = "Dirección";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 150;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Aciones";
+            this.Column1.Name = "Column1";
             // 
             // Gestion_Proveedor
             // 

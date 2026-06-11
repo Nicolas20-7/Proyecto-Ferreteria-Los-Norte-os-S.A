@@ -34,7 +34,6 @@ namespace Ferreteria_Los_Norteños_S.A
 
 
 
-
             btnBuscar.Click += btnBuscar_Click;
             btnEditar.Click += btnEditar_Click;
             btnEliminar.Click += btnEliminar_Click; 
@@ -162,10 +161,33 @@ int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells[0].Value); // ajus
         {
             if (dgvProveedores.SelectedRows.Count > 0)
             {
-                var id = (int)dgvProveedores.SelectedRows[0].Cells["ColumnId"].Value;
-                listaProveedores.RemoveAll(p => p.Id == id);
-                CargarDatos();
-                MessageBox.Show("Proveedor eliminado con éxito.");
+                // Obtener el objeto enlazado de la fila seleccionada en lugar de depender del nombre de la columna
+                var fila = dgvProveedores.SelectedRows[0];
+                if (fila.DataBoundItem is Proveedor proveedor)
+                {
+                    var id = proveedor.Id;
+                    listaProveedores.RemoveAll(p => p.Id == id);
+                    CargarDatos();
+                    MessageBox.Show("Proveedor eliminado con éxito.");
+                }
+                else
+                {
+                    // Si la fila no está enlazada a un objeto, intentar extraer el valor de la celda de forma segura
+                    object valor = null;
+                    if (fila.Cells.Count > 0)
+                        valor = fila.Cells[0].Value;
+
+                    if (valor is int intId)
+                    {
+                        listaProveedores.RemoveAll(p => p.Id == intId);
+                        CargarDatos();
+                        MessageBox.Show("Proveedor eliminado con éxito.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo determinar el Id del proveedor seleccionado.");
+                    }
+                }
             }
             else
             {
