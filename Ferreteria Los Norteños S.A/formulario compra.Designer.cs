@@ -1,3 +1,5 @@
+using System;
+
 namespace Ferreteria_Los_Norteños_S.A
 {
     partial class formulario_compra
@@ -534,7 +536,10 @@ namespace Ferreteria_Los_Norteños_S.A
 
         }
 
-
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox gbInfoCompra;
