@@ -9,6 +9,8 @@ namespace GestionProveedoresApp
         public string Contrasena { get; set; }
         public string Correo { get; set; }
         public bool Activo { get; set; }
+        public string Username { get; set; }
+        public string Rol { get; set; }
         
     }
 }

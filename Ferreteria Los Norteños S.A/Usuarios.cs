@@ -12,23 +12,25 @@ namespace Ferreteria_Los_Norteños_S.A
     {
         private List<Usuario> listaUsuarios = new List<Usuario>();
         private int nextUserId = 1;
+        private int editingUserId = -1;
+       
 
         public Usuarios()
         {
             InitializeComponent();
             ConfigurarGrid();
+            if (btnGuardar != null) btnGuardar.Click += btnGuardar_Click;
+            if (btnEditar != null) btnEditar.Click += btnEditar_Click;
+            if (btnEliminar != null) btnEliminar.Click += btnEliminar_Click;
+            if (btnLimpiar != null) btnLimpiar.Click += btnLimpiar_Click;
+            if (btnBuscar != null) btnBuscar.Click += Button1_Click;
+          
 
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
 
-            btnGuardar.Click += Button2_Click;
-            btnEditar.Click += Button3_Click; 
-            btnEliminar.Click += Button4_Click; 
-            btnLimpiar.Click += Button5_Click;
-            btnBuscar.Click += Button1_Click; 
-
-            RedondearBoton(btnLimpiar, 20);
-            RedondearBoton(btnGuardar, 20);
-         
-            RedondearBoton(btnBuscar, 20);
+            if (btnLimpiar != null) RedondearBoton(btnLimpiar, 20);
+            if (btnGuardar != null) RedondearBoton(btnGuardar, 20);
+            if (btnBuscar != null) RedondearBoton(btnBuscar, 20);
           
 
 
@@ -38,8 +40,8 @@ namespace Ferreteria_Los_Norteños_S.A
 
             if (listaUsuarios.Count == 0)
             {
-                listaUsuarios.Add(new Usuario { Id = nextUserId++, Nombre = "admin", Contrasena = "admin", Correo = "admin@empresa.com", Activo = true });
-                listaUsuarios.Add(new Usuario { Id = nextUserId++, Nombre = "usuario1", Contrasena = "1234", Correo = "user1@empresa.com", Activo = true });
+                listaUsuarios.Add(new Usuario { Id = nextUserId++, Nombre = "admin", Username = "admin", Contrasena = "admin", Correo = "admin@empresa.com", Rol = "Gerente", Activo = true });
+                listaUsuarios.Add(new Usuario { Id = nextUserId++, Nombre = "usuario1", Username = "usuario1", Contrasena = "1234", Correo = "user1@empresa.com", Rol = "Empleado", Activo = true });
             }
 
             CargarDatos();
@@ -68,62 +70,111 @@ namespace Ferreteria_Los_Norteños_S.A
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            // If designer did not create columns, add them programmatically
+            if (dataGridView1.Columns.Count < 6)
+            {
+                dataGridView1.Columns.Clear();
 
-          
-            dataGridView1.Columns[0].DataPropertyName = "Id";
-            dataGridView1.Columns[1].DataPropertyName = "Contrasena";
-            dataGridView1.Columns[2].DataPropertyName = "Nombre";
-            dataGridView1.Columns[3].DataPropertyName = "Correo";
-            dataGridView1.Columns[4].DataPropertyName = "Activo";
+                var colNombre = new DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
+                var colUsername = new DataGridViewTextBoxColumn { Name = "colUsername", HeaderText = "Usuario", DataPropertyName = "Username" };
+                var colCorreo = new DataGridViewTextBoxColumn { Name = "colCorreo", HeaderText = "Correo", DataPropertyName = "Correo" };
+                var colRol = new DataGridViewTextBoxColumn { Name = "colRol", HeaderText = "Rol", DataPropertyName = "Rol" };
+                var colActivo = new DataGridViewTextBoxColumn { Name = "colActivo", HeaderText = "Estado", DataPropertyName = "Activo" };
+                var colId = new DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id", DataPropertyName = "Id", Visible = false };
+
+                dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNombre, colUsername, colCorreo, colRol, colActivo, colId });
+            }
+            else
+            {
+                dataGridView1.Columns[0].DataPropertyName = "Nombre"; 
+                dataGridView1.Columns[1].DataPropertyName = "Username";
+                dataGridView1.Columns[2].DataPropertyName = "Correo"; 
+                dataGridView1.Columns[3].DataPropertyName = "Rol"; 
+                dataGridView1.Columns[4].DataPropertyName = "Activo"; 
+                dataGridView1.Columns[5].DataPropertyName = "Id"; 
+                dataGridView1.Columns[5].Visible = false;
+            }
         }
 
         private void CargarDatos()
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = listaUsuarios.Select(u => new {
-                u.Id,
-                u.Contrasena,
                 u.Nombre,
+                u.Username,
                 u.Correo,
-                Activo = u.Activo ? "Activo" : "Inactivo"
+                u.Rol,
+                Activo = u.Activo ? "Activo" : "Inactivo",
+                u.Id
             }).ToList();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            var form = new nuevo_usuario();
-            form.StartPosition = FormStartPosition.CenterParent;
-            var result = form.ShowDialog(this);
-            if (result == DialogResult.OK && form.CreatedUsuario != null)
+         
+            string nombre = textBox7.Text?.Trim();
+            string username = textBox4.Text?.Trim();
+            string contrasena = textBox5.Text?.Trim();
+            string correo = textBox6.Text?.Trim();
+            string rol = comboBox1.SelectedItem as string ?? comboBox1.Text;
+            string estado = comboBox2.SelectedItem as string ?? comboBox2.Text;
+
+            if (string.IsNullOrWhiteSpace(nombre)) { MessageBox.Show("El nombre es obligatorio."); textBox7.Focus(); return; }
+            if (string.IsNullOrWhiteSpace(username)) { MessageBox.Show("El usuario es obligatorio."); textBox4.Focus(); return; }
+            if (string.IsNullOrWhiteSpace(contrasena) || contrasena.Length < 4) { MessageBox.Show("La contraseña debe tener al menos 4 caracteres."); textBox5.Focus(); return; }
+            if (string.IsNullOrWhiteSpace(correo) || !correo.Contains("@")) { MessageBox.Show("Introduce un correo válido."); textBox6.Focus(); return; }
+            if (string.IsNullOrWhiteSpace(rol)) { MessageBox.Show("Selecciona un rol."); comboBox1.Focus(); return; }
+
+            bool activo = string.Equals(estado, "Activo", StringComparison.OrdinalIgnoreCase);
+
+            if (editingUserId == -1)
             {
-                form.CreatedUsuario.Id = nextUserId++;
-                listaUsuarios.Add(form.CreatedUsuario);
-                CargarDatos();
+             
+                var u = new Usuario
+                {
+                    Id = nextUserId++,
+                    Nombre = nombre,
+                    Username = username,
+                    Contrasena = contrasena,
+                    Correo = correo,
+                    Rol = rol,
+                    Activo = activo
+                };
+                listaUsuarios.Add(u);
+                MessageBox.Show("Usuario agregado correctamente.");
             }
+            else
+            {
+                
+                var u = listaUsuarios.FirstOrDefault(x => x.Id == editingUserId);
+                if (u != null)
+                {
+                    u.Nombre = nombre;
+                    u.Username = username;
+                    u.Contrasena = contrasena;
+                    u.Correo = correo;
+                    u.Rol = rol;
+                    u.Activo = activo;
+                    MessageBox.Show("Usuario actualizado correctamente.");
+                }
+            }
+
+            ClearFields();
+            CargarDatos();
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Selecciona un usuario para editar.");
+                MessageBox.Show("Selecciona un usuario de la lista para editar.");
                 return;
             }
-
-            int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value);
-            var usuario = listaUsuarios.FirstOrDefault(u => u.Id == id);
-            if (usuario == null) return;
-
-            var form = new Editar_Usuario(usuario);
-            form.StartPosition = FormStartPosition.CenterParent;
-            var result = form.ShowDialog(this);
-            if (result == DialogResult.OK)
-            {
-                CargarDatos();
-            }
+          
+            dataGridView1_SelectionChanged(this, EventArgs.Empty);
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 0)
             {
@@ -131,14 +182,29 @@ namespace Ferreteria_Los_Norteños_S.A
                 return;
             }
 
-            int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value);
-            listaUsuarios.RemoveAll(u => u.Id == id);
-            CargarDatos();
+            int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[5].Value);
+            var usuario = listaUsuarios.FirstOrDefault(u => u.Id == id);
+            if (usuario == null) return;
+
+            var confirm = MessageBox.Show($"¿Eliminar al usuario '{usuario.Nombre}'?", "Confirmar", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
+            {
+                listaUsuarios.RemoveAll(u => u.Id == id);
+                ClearFields();
+                CargarDatos();
+            }
         }
 
-        private void Button5_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            ClearFields();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+            editingUserId = -1;
+            textBox7.Focus();
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -150,14 +216,61 @@ namespace Ferreteria_Los_Norteños_S.A
                 return;
             }
 
-            var filtrados = listaUsuarios.Where(u => u.Nombre.ToLower().Contains(filtro) || u.Correo.ToLower().Contains(filtro)).ToList();
+            var filtrados = listaUsuarios.Where(u => u.Nombre.ToLower().Contains(filtro) || u.Correo.ToLower().Contains(filtro) || (u.Username??"").ToLower().Contains(filtro)).ToList();
             dataGridView1.DataSource = filtrados.Select(u => new {
-                u.Id,
-                u.Contrasena,
                 u.Nombre,
+                u.Username,
                 u.Correo,
-                Activo = u.Activo ? "Activo" : "Inactivo"
+                u.Rol,
+                Activo = u.Activo ? "Activo" : "Inactivo",
+                u.Id
             }).ToList();
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                return;
+            }
+            var row = dataGridView1.SelectedRows[0];
+
+            object idObj = null;
+            if (row.DataBoundItem != null)
+            {
+                var prop = row.DataBoundItem.GetType().GetProperty("Id");
+                if (prop != null) idObj = prop.GetValue(row.DataBoundItem);
+            }
+            if (idObj == null && row.Cells.Count > 5) idObj = row.Cells[5].Value;
+
+            if (idObj == null || !int.TryParse(idObj.ToString(), out int id))
+            {
+                MessageBox.Show("Id no disponible o inválido.");
+                return;
+            }
+
+            var u = listaUsuarios.FirstOrDefault(x => x.Id == id);
+            if (u == null) return;
+
+            editingUserId = u.Id;
+            textBox7.Text = u.Nombre;
+            textBox4.Text = u.Username;
+            textBox5.Text = u.Contrasena;
+            textBox6.Text = u.Correo;
+            comboBox1.SelectedItem = u.Rol;
+            comboBox2.SelectedItem = u.Activo ? "Activo" : "Inactivo";
+        }
+
+        private void ClearFields()
+        {
+            editingUserId = -1;
+            textBox7.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            comboBox1.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
+            dataGridView1.ClearSelection();
         }
 
        
@@ -216,12 +329,12 @@ namespace Ferreteria_Los_Norteños_S.A
 
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnEditar_Click_1(object sender, EventArgs e)
         {
 
         }

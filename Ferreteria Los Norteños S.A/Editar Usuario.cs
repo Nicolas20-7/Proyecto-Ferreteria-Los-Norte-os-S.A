@@ -14,8 +14,7 @@ namespace Ferreteria_Los_Norteños_S.A
     public partial class Editar_Usuario : Form
     {
         private Usuario usuario;
-        private object textBox3;
-
+      
         public Editar_Usuario(Usuario usuario)
         {
             InitializeComponent();
