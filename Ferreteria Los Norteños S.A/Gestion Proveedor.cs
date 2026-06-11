@@ -8,16 +8,15 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Ferreteria_Los_Norteños_S.A
 {
     public partial class Gestion_Proveedor : Form 
     {
-
-
-        
         private List<Proveedor> listaProveedores = new List<Proveedor>();
+        private int? _editingId = null;
        
         public Gestion_Proveedor()
         {
@@ -34,11 +33,9 @@ namespace Ferreteria_Los_Norteños_S.A
 
 
 
-            btnBuscar.Click += btnBuscar_Click;
+            // Usaremos los manejadores definidos en el diseñador; evitar suscribir handlers duplicados
             btnEditar.Click += btnEditar_Click;
-            btnEliminar.Click += btnEliminar_Click; 
-            btnGuardar.Click += btnGuardar_Click;
-
+            btnEliminar.Click += btnEliminar_Click;
             btnLimpiar.Click += btnLimpiar_Click;
 
             dgvProveedores.CellDoubleClick += dgvProveedores_CellDoubleClick;
@@ -73,36 +70,16 @@ namespace Ferreteria_Los_Norteños_S.A
            
             dgvProveedores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.BackColor = Color.White;
+            dgvProveedores.AutoGenerateColumns = false; // columnas definidas en diseñador
         }
 
         private void CargarDatos()
         {
+            // Bind directo a la lista de proveedores para poder obtener el objeto en DataBoundItem
             dgvProveedores.DataSource = null;
-            dgvProveedores.DataSource = listaProveedores.Select(p => new
-            {
-                Id = p.Id,
-                
-                p.Nombre,
-                p.Codigo,
-                Correo = p.Correo,
-                Telefono = p.Telefono,
-           
-                Direccion = p.Direccion
-            }).ToList();
+            dgvProveedores.DataSource = listaProveedores.ToList();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            var form = new Proveedor_Nuevo();
-            form.Owner = this;
-            if (form.ShowDialog() == DialogResult.OK && form.CreatedProveedor != null)
-            {
-               
-                form.CreatedProveedor.Codigo = GenerarRUCUnico();
-                listaProveedores.Add(form.CreatedProveedor);
-                CargarDatos();
-            }
-        }
 
         private string GenerarRUCUnico()
         {
@@ -115,21 +92,6 @@ namespace Ferreteria_Los_Norteños_S.A
             return ruc;
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            string filtro = txtBuscar.Text.ToLower();
-            var filtrados = listaProveedores.Where(p => (!string.IsNullOrEmpty(p.Nombre) && p.Nombre.ToLower().Contains(filtro)) ||
-                                                       (!string.IsNullOrEmpty(p.Codigo) && p.Codigo.ToLower().Contains(filtro))).ToList();
-            dgvProveedores.DataSource = filtrados.Select(p => new
-            {
-              
-                p.Nombre,
-                p.Codigo,
-                Correo = p.Correo,
-                Telefono = p.Telefono,
-                Direccion = p.Direccion
-            }).ToList();
-        }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
@@ -139,21 +101,20 @@ namespace Ferreteria_Los_Norteños_S.A
                 return;
             }
 
-            // csharp
-int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells[0].Value); // ajustar índice// csharp
-
-            var proveedor = listaProveedores.FirstOrDefault(p => p.Id == id);
-            if (proveedor == null)
+            var fila = dgvProveedores.SelectedRows[0];
+            if (fila.DataBoundItem is Proveedor proveedor)
             {
-                MessageBox.Show("Proveedor no encontrado.");
-                return;
+                // Cargar datos en los campos para edición
+                _editingId = proveedor.Id;
+                textBox7.Text = proveedor.Nombre;
+                textBox3.Text = proveedor.Codigo; // RUC
+                textBox4.Text = proveedor.Telefono;
+                textBox5.Text = proveedor.Direccion;
+                textBox6.Text = proveedor.Correo;
             }
-
-            var editarForm = new Editar_Proveedor(proveedor.Id);
-            editarForm.Owner = this;
-            if (editarForm.ShowDialog() == DialogResult.OK)
+            else
             {
-                CargarDatos();
+                MessageBox.Show("No se pudo cargar el proveedor seleccionado.");
             }
         }
 
@@ -165,28 +126,17 @@ int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells[0].Value); // ajus
                 var fila = dgvProveedores.SelectedRows[0];
                 if (fila.DataBoundItem is Proveedor proveedor)
                 {
-                    var id = proveedor.Id;
-                    listaProveedores.RemoveAll(p => p.Id == id);
-                    CargarDatos();
-                    MessageBox.Show("Proveedor eliminado con éxito.");
-                }
-                else
-                {
-                    // Si la fila no está enlazada a un objeto, intentar extraer el valor de la celda de forma segura
-                    object valor = null;
-                    if (fila.Cells.Count > 0)
-                        valor = fila.Cells[0].Value;
-
-                    if (valor is int intId)
+                    var confirm = MessageBox.Show($"Eliminar proveedor '{proveedor.Nombre}'?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (confirm == DialogResult.Yes)
                     {
-                        listaProveedores.RemoveAll(p => p.Id == intId);
+                        listaProveedores.RemoveAll(p => p.Id == proveedor.Id);
                         CargarDatos();
                         MessageBox.Show("Proveedor eliminado con éxito.");
                     }
-                    else
-                    {
-                        MessageBox.Show("No se pudo determinar el Id del proveedor seleccionado.");
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo determinar el proveedor seleccionado.");
                 }
             }
             else
@@ -205,19 +155,23 @@ int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells[0].Value); // ajus
             textBox5.Clear(); // direccion
             textBox6.Clear(); // otro campo
             textBox7.Clear(); // nombre
+            _editingId = null;
+            CargarDatos();
         }
 
         private void dgvProveedores_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
             if (e.RowIndex >= 0)
             {
-                int id = Convert.ToInt32(dgvProveedores.Rows[e.RowIndex].Cells["ColumnId"].Value);
-                var editarForm = new Editar_Proveedor(id);
-                editarForm.Owner = this;
-                if (editarForm.ShowDialog() == DialogResult.OK)
+                var fila = dgvProveedores.Rows[e.RowIndex];
+                if (fila.DataBoundItem is Proveedor proveedor)
                 {
-                    CargarDatos();
+                    _editingId = proveedor.Id;
+                    textBox7.Text = proveedor.Nombre;
+                    textBox3.Text = proveedor.Codigo;
+                    textBox4.Text = proveedor.Telefono;
+                    textBox5.Text = proveedor.Direccion;
+                    textBox6.Text = proveedor.Correo;
                 }
             }
         }
@@ -272,15 +226,96 @@ int id = Convert.ToInt32(dgvProveedores.SelectedRows[0].Cells[0].Value); // ajus
 
         private void Gestion_Proveedor_Load(object sender, EventArgs e)
         {
-                    listaProveedores.Clear();
+            // No limpiar la lista aquí - se inicializa en el constructor
         }
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-
+            // reutilizar la lógica de búsqueda: si txtBuscar vacío, mostrar todo
+            var filtro = txtBuscar.Text?.Trim();
+            if (string.IsNullOrEmpty(filtro))
+            {
+                CargarDatos();
+                return;
+            }
+            filtro = filtro.ToLower();
+            var filtrados = listaProveedores.Where(p => (!string.IsNullOrEmpty(p.Nombre) && p.Nombre.ToLower().Contains(filtro)) ||
+                                                       (!string.IsNullOrEmpty(p.Codigo) && p.Codigo.ToLower().Contains(filtro))).ToList();
+            dgvProveedores.DataSource = filtrados;
         }
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            // Validaciones básicas
+            var nombre = textBox7.Text?.Trim();
+            var ruc = textBox3.Text?.Trim();
+            var telefono = textBox4.Text?.Trim();
+            var direccion = textBox5.Text?.Trim();
+            var correo = textBox6.Text?.Trim();
+
+            if (string.IsNullOrEmpty(nombre))
+            {
+                MessageBox.Show("Ingrese el nombre del proveedor.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox7.Focus();
+                return;
+            }
+            if (string.IsNullOrEmpty(telefono))
+            {
+                MessageBox.Show("Ingrese el teléfono del proveedor.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox4.Focus();
+                return;
+            }
+            if (!string.IsNullOrEmpty(correo))
+            {
+                // Validación simple de email
+                if (!Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("Ingrese un correo electrónico válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox6.Focus();
+                    return;
+                }
+            }
+
+            if (_editingId.HasValue)
+            {
+                // actualizar
+                var existing = listaProveedores.FirstOrDefault(p => p.Id == _editingId.Value);
+                if (existing != null)
+                {
+                    existing.Nombre = nombre;
+                    existing.Codigo = string.IsNullOrEmpty(ruc) ? existing.Codigo : ruc;
+                    existing.Telefono = telefono;
+                    existing.Direccion = direccion;
+                    existing.Correo = correo;
+                    Update(existing);
+                    MessageBox.Show("Proveedor actualizado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                _editingId = null;
+            }
+            else
+            {
+                // crear
+                var nuevoId = listaProveedores.Any() ? listaProveedores.Max(p => p.Id) + 1 : 1;
+                var codigoFinal = string.IsNullOrEmpty(ruc) ? GenerarRUCUnico() : ruc;
+                var nuevo = new Proveedor
+                {
+                    Id = nuevoId,
+                    Nombre = nombre,
+                    Codigo = codigoFinal,
+                    Telefono = telefono,
+                    Direccion = direccion,
+                    Correo = correo
+                };
+                listaProveedores.Add(nuevo);
+                CargarDatos();
+                MessageBox.Show("Proveedor agregado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            // limpiar campos
+            btnLimpiar_Click(sender, e);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

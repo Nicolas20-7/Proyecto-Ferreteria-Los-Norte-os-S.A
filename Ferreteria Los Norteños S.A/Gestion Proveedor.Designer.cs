@@ -31,6 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_Proveedor));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -50,15 +56,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,6 +101,47 @@
             this.dgvProveedores.Size = new System.Drawing.Size(904, 232);
             this.dgvProveedores.TabIndex = 1;
             this.dgvProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Nombre";
+            this.Column2.HeaderText = "Nombre del proveedor";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Telefono";
+            this.Column5.HeaderText = "Número de Teléfono";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Codigo";
+            this.Column3.HeaderText = "Numero Ruc";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Correo";
+            this.Column4.HeaderText = "Correo electrónico";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Direccion";
+            this.Column7.HeaderText = "Dirección";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 150;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Aciones";
+            this.Column1.Name = "Column1";
             // 
             // label2
             // 
@@ -185,6 +227,7 @@
             this.groupBox1.TabIndex = 62;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Proveedor";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnGuardar
             // 
@@ -347,6 +390,17 @@
             this.label8.TabIndex = 52;
             this.label8.Text = "  Nombre del Proveedor :";
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Ferreteria_Los_Norteños_S.A.Properties.Resources.WhatsApp_Image_2026_06_10_at_9_05_32_PM;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(1003, 125);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 40);
+            this.button1.TabIndex = 69;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Transparent;
@@ -390,53 +444,13 @@
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Nombre";
-            this.Column2.HeaderText = "Nombre del proveedor";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Telefono";
-            this.Column5.HeaderText = "Número de Teléfono";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Codigo";
-            this.Column3.HeaderText = "Numero Ruc";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Correo";
-            this.Column4.HeaderText = "Correo electrónico";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Direccion";
-            this.Column7.HeaderText = "Dirección";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 150;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Aciones";
-            this.Column1.Name = "Column1";
-            // 
             // Gestion_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1056, 637);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -500,6 +514,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Button button1;
     }
 
 }
