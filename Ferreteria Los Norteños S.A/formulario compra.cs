@@ -298,5 +298,12 @@ namespace Ferreteria_Los_Norteños_S.A
             cboTipoDocumento.SelectedIndex = 0;
             dateTimePicker1.Value = DateTime.Now;
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ayuda ayuda = new ayuda();
+            ayuda.Show();
+
+        }
     }
 }
