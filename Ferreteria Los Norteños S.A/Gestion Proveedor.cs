@@ -25,8 +25,7 @@ namespace Ferreteria_Los_Norteños_S.A
 
             RedondearBoton(btnBuscar, 20);
             RedondearBoton(btnGuardar, 20);
-            RedondearBoton(btnEditar, 20);
-            RedondearBoton(btnEliminar, 20);
+            
             RedondearBoton(btnLimpiar, 20);
             
 
@@ -260,10 +259,18 @@ namespace Ferreteria_Los_Norteños_S.A
                 textBox4.Focus();
                 return;
             }
-            if (!string.IsNullOrEmpty(correo))
+            if (!string.IsNullOrWhiteSpace(correo))
             {
-              
-                if (!Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                try
+                {
+                    var addr = new System.Net.Mail.MailAddress(correo);
+                    // opcion: verificar que la dirección contenga nombre y dominio
+                    if (string.IsNullOrWhiteSpace(addr.Address) || !addr.Address.Contains("@"))
+                    {
+                        throw new FormatException();
+                    }
+                }
+                catch
                 {
                     MessageBox.Show("Ingrese un correo electrónico válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox6.Focus();
