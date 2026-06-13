@@ -33,8 +33,7 @@ namespace Ferreteria_Los_Norteños_S.A
             if (btnLimpiar != null) RedondearBoton(btnLimpiar, 20);
             if (btnGuardar != null) RedondearBoton(btnGuardar, 20);
             if (btnBuscar != null) RedondearBoton(btnBuscar, 20);
-            if (btnEditar != null) RedondearBoton(btnEditar, 20);
-          
+            
 
             if (listaUsuarios.Count == 0)
             {
