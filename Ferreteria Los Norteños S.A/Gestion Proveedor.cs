@@ -333,7 +333,7 @@ namespace Ferreteria_Los_Norteños_S.A
         {
             formulario_ayuda ayuda = new formulario_ayuda();
             ayuda.Show();
-        }
+        }   
     }
 }
 
